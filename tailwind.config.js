@@ -12,11 +12,16 @@ export default {
       colors: {
         primary: "#FA4516", // Ensure the hex color values are prefixed with #
         secondary: "#4D5467",
+        nw:"#ffffff",
+        nwb:"#ffffff00"
       },
       backgroundColor: {
         primary: "#FA4516", // Ensure the hex color values are prefixed with #
         secondary: "#4D5467",
       },
+      backgroundImage:{
+        'home':"url('./src/assets/home-page.jpg)"
+      }
     },
   },
   plugins: [],

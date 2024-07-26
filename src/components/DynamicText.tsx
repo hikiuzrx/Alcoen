@@ -21,9 +21,9 @@ export function DynamicText() {
 
    const executeSequence = (step: number) => {
      sequence[step]();
-     let delay = 1000;
+     let delay = 500;
      if (step === 2 || step === 6) delay = 2000; // 2-second pauses
-     else if (step === 4) delay = 1000; // 1-second pause
+     else if (step === 4) delay = 500; // 1-second pause
 
      if (step === sequence.length - 1) {
        setIndex((prevIndex) => (prevIndex + 2) % arr.length);
@@ -40,10 +40,10 @@ export function DynamicText() {
 
   return (
     <div>
-      <span className="text-9xl text-primary pl-5 ml-20 m-4 mr-1 font-bold brightness-110 contrast-100 mix-blend-color-burn">
+      <span className="text-9xl text-primary pl-5 ml-20 m-4 mr-1 font-bold  mix-blend-color-burn">
         {span1}
       </span>
-      <span className="text-9xl text-primary m-4 ml-1 font-bold brightness-110 contrast-100 mix-blend-color-burn">
+      <span className="text-9xl text-primary m-4 ml-1 font-bold   mix-blend-color-burn">
         {span2}
       </span>
     </div>

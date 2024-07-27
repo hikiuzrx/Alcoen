@@ -47,7 +47,7 @@ export function Home(){
                     </div>
                </div>
                    
-                    <div className='col-span-2 w-full   backdrop-blur-sm h-14'></div>
+                    <div className='col-span-2 w-full bg-gradient-to-b from-transparent to-white  h-14'></div>
                </div>
           </section>
           <section className="bg-gradient-to-t from-[url('../../public/home-page.jpg)] to-white ">
@@ -99,7 +99,29 @@ export function Home(){
                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi illo debitis quam vitae reprehenderit vero aut alias earum, quisquam aspernatur at corrupti architecto quia praesentium sint fugit repellat mollitia! Provident?
                Tempora reiciendis doloribus dignissimos porro, ipsam incidunt aliquam mollitia cum earum. Delectus eos aperiam saepe in, voluptatum nemo sit debitis alias quam sed dolorum rem asperiores soluta, architecto fugiat voluptates!</p>
           </section>
-          
+          <section className='grid grid-cols-12'>
+               <div className='col-start-2 ml-16 pl-2 col-end-10'>
+               <h2 className='text-7xl font-medium text-secondary'>Découvrez <span className='text-primary'>Nos Services</span></h2>
+               
+               </div>
+               <div className='col-start-2 ml-16 pl-2 col-end-12 mr-20'>
+               <p className='text-secondary text-lg leading-loose font-medium mt-4'>
+                    Découvrez dès maintenant nos services d'inspection et d'expertise chez ALCOEN.
+                     Nous sommes déterminés à vous offrir 
+                     des solutions sur mesure, une qualité 
+                     de service inégalée et une tranquillité 
+                     d'esprit totale. Avec notre équipe hautement qualifiée et notre 
+                     engagement envers l'excellence, nous sommes prêts à répondre à tous 
+                     vos besoins spécifiques. Faites le choix de la confiance et de 
+                     l'efficacité avec ALCOEN, votre partenaire de confiance pour assurer la sécurité et la fiabilité 
+                     de vos installations. Nous sommes là pour vous accompagner vers la réussite de vos projets 
+                     les plus ambitieux.
+               </p>
+               </div>
+               <div>
+                    
+               </div>
+          </section>
           </>
      )
 }

@@ -3,6 +3,8 @@ import DynamicText from '../components/DynamicText'
 import { NavLink } from 'react-router-dom'
 import triangle from '../assets/triangle-icone.svg'
 import homeSection from '../assets/home-section.jpg'
+import  Slider  from '../components/Slider'
+import  HomeCard  from '../components/HomeCard'
 
 export function Home(){
      
@@ -118,10 +120,23 @@ export function Home(){
                      les plus ambitieux.
                </p>
                </div>
-               <div>
-                    
+             <div className='col-span-8 col-start-3'>
+             <Slider/>
+             </div>
+          </section>
+          <section>
+               <div className='grid grid-cols-12'>
+                    <div className='col-start-2 col-end-12  p-10 'style={{textAlign:"center"}}>
+                         <h2 className='text-primary text-7xl mx-24 px-10 font-semibold leading-normal'>
+                              Rejoignez notre famille de clients satisfaits
+                         </h2>
+                    </div>
+                    <div className='col-start-3 col-span-8 my-4 '>
+                         <HomeCard/>
+                    </div>
                </div>
           </section>
+       
           </>
      )
 }

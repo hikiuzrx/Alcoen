@@ -33,7 +33,7 @@ function RouteNavLayout() {
           <div className="flex items-center text-lg justify-evenly w-1/2">
             <NavLink
               to="a-propos"
-              className='m-4 text-primary mt-7 mb-5 relative group hover:text-primary'
+              className={getLinkClasses('/a-propos')}
               onClick={() => handleClick('/a-propos')}
             >
               A Propos

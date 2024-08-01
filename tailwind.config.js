@@ -30,7 +30,9 @@ export default {
       backgroundColor: {
         primary: "#FA4516",
       'primary-100':'#fa45168c',
-      'primary-200':'#fa45164d',  // Ensure the hex color values are prefixed with #
+      'primary-200':'#fa45164d',
+      about1 :"#A52B0B",
+      about2:"#FA4516",  // Ensure the hex color values are prefixed with #
         secondary: "#4D5467",
         other:"#282F3A",
         'other-100':'#282f3abf'

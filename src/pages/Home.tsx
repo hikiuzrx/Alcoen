@@ -11,7 +11,7 @@ export function Home(){
     
      return (
           <>
-                         <section className='relative top-0 mt-3 mb-10'>
+               <section className='relative top-0 mt-3 mb-10'>
                <div className="bg-[url('../../public/home-page.jpg')]  bg-cover bg-no-repeat relative ">
                <div className='grid grid-cols-2 relative  '>
                     <div className='flex justify-center items-start flex-col  '>
@@ -131,7 +131,7 @@ export function Home(){
                               Rejoignez notre famille de clients satisfaits
                          </h2>
                     </div>
-                    <div className='col-start-3 col-span-8 my-4 '>
+                    <div className='col-start-3 col-span-8 my-20 '>
                          <HomeCard/>
                     </div>
                </div>

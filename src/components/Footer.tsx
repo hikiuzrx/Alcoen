@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 export function Footer() {
   return (
-    <footer className="bg-other grid grid-cols-7 gap-4 mt-20 min-h-[436px] p-10 ">
+    <footer className="bg-other   grid grid-cols-7 gap-4 mt-20 min-h-[436px] p-10 ">
      <div className='col-span-5 '>
        <div className='flex justify-end  items-center'>
        <div className="flex flex-col items-end w-1/3 text-lg gap-y-6 ">

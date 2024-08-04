@@ -278,12 +278,14 @@ export function Secteur(){
             <div className="bg-gray-200 drop-shadow-md rounded-xl text-other flex justify-center items-center">
               <img src={gsa} alt="gsa" />
             </div>
-           
-              
-           
             </div>
 
           </div>
+          <h2 className=" col-start-2 ml-10 leading-snug my-10 col-span-6 text-secondary text-5xl font-semibold">
+          Rejoignez notre famille de clients satisfaits
+            et contactez-nous
+            <p className="text-primary"> dès aujourd'hui</p>
+          </h2>
        </section>
        </div>
      )

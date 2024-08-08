@@ -1,0 +1,18 @@
+.custom-checkbox {
+     background-color: white;
+     border-radius: 0.25rem;
+   }
+   
+   .custom-checkbox:checked {
+     background-color: white; /* Keeps the background white even when checked */
+   }
+   
+   .custom-checkbox:checked::before {
+     content: "✓";
+     display: block;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     color: #FFA500; /* Orange checkmark */
+   }

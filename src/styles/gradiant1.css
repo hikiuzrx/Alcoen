@@ -1,0 +1,11 @@
+.gradiant1 {
+  background-image: linear-gradient(to right, #FA4516, #fa45164d);
+  background-size: 0 100%;
+  transition: background-size 500ms ease-in-out ;
+  background-repeat: no-repeat;
+}
+
+.gradiant1:hover, .gradiant1:focus {
+  background-size: 100% 100%;
+  background-position: left;
+}

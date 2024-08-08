@@ -72,7 +72,7 @@ let getCustomGradiant = (index:number):string =>{
                customGradiant ='bg-gradient-to-br from-primary via-primary-100  to-transparent  h-[202px] object-fill absolute m-2  p-2 shadow-lg rounded-lg inset-0'
                break;
           case 1: case 4:
-               customGradiant = 'bg-gradient-to-tl from-primary via-transparent to-transparent h-[202px] object-fill absolute m-2  p-2 shadow-lg rounded-lg inset-0'
+               customGradiant = 'bg-gradient-to-tl from-primary via-transparent to-secondary  h-[202px] object-fill absolute m-2  p-2 shadow-lg rounded-lg inset-0'
                break;
           case 2 : case 8: 
                customGradiant = 'bg-gradient-to-tr from-primary via-transparent to-other h-[202px] object-fill absolute m-2  p-2 shadow-lg rounded-lg inset-0 '

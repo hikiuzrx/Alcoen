@@ -30,7 +30,7 @@ import dp from '../assets/companies-logos/dp world.png'
 import def from '../assets/companies-logos/def.png'
 import somiz from '../assets/companies-logos/somiz.png'
 export function Secteur(){
-  const Header = {part1: 'Nos',part2:'Secteur'}
+  const Header = {part1: 'NOS',part2:'SECTEUR'}
      return (
        <div className="relative mb-10 top-20 ml-0">
        <PageHeader Header={Header}/>
@@ -267,7 +267,7 @@ export function Secteur(){
               <img src={dp} alt="dp world" />
             </div>
            
-            <div className="flex justify-center col-span-full">
+            <div className="flex justify-center gap-3 col-span-full">
               
               <div className="bg-gray-200 drop-shadow-md rounded-xl p-2 overflow-hidden  text-other flex justify-center items-center">
               <img src={ourch} alt="" />

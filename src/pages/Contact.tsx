@@ -1,6 +1,6 @@
 import PageHeader from "../components/PageHeader"
 import { Form } from "react-router-dom"
-import "./checkBox.css"
+import "../styles/checkBox.css"
 import sns from '../assets/Contact/social media.svg'
 import map from '../assets/Contact/contact-map.png'
 import logo from "../assets/Contact/big logo.png"

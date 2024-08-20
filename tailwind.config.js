@@ -6,6 +6,24 @@ export default {
   ],
   theme: {
     extend: { 
+      listStyleImage: {
+        triangle: 'url("/src/assets/list-icone.svg")',
+      },
+      backgroundImage: _theme => ({
+        'IRESP': "url('../../public/services/IRESP.png')",
+        'IMAE': "url('../../public/services/IMAE.png')",
+        'CRAML': "url('../../public/services/CRAML.png')",
+        'CND': "url('../../public/services/CND.png')",
+        'RIGS': "url('../../public/services/RIGS.png')",
+        'EATA': "url('../../public/services/EATA.png')",
+        'CREIE': "url('../../public/services/CREIE.png')",
+        'AT': "url('../../public/services/AT.png')",
+        'EAER': "url('../../public/services/EAER.png')",
+        'MADDP': "url('../../public/services/MADDP.png')",
+        'FAPI': "url('../../public/services/FAPI.png')",
+        'FCND': "url('../../public/services/FCND.png')",
+        'FES': "url('../../public/services/FES.png')",
+      }),
       textShadow: {
         'sm': '1px 1px 2px rgba(0, 0, 0, 0.5)',
         'md': '2px 2px 4px rgba(0, 0, 0, 0.5)',

@@ -1,11 +1,14 @@
-import { NavLink,Outlet } from "react-router-dom";
-import PageHeader from "../components/PageHeader";
-import { useLocation } from "react-router-dom";
-import ServicesHeader from "../components/ServicesHeader";
-
-
+import {Outlet } from "react-router-dom"
+import ServiceHeader from "../components/ServiceHeader"
+import { useLocation } from "react-router-dom"
 export default function ServicesLayout(){
-     return(<>
-     </>)
-
+     const location = useLocation()
+     if(location.pathname === '/service'){
+          return(<Outlet/>)
+     }else{
+          return (<>
+          <ServiceHeader/>
+          <Outlet/>
+          </>)
+     }
 }

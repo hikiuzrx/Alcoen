@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom"
 import PageHeader from "../components/PageHeader"
 import IRESP from '../assets/IRESP.jpg'
 import AT from '../assets/AT.png'
@@ -16,7 +17,7 @@ import form2 from '../assets/Service/Formation2.png'
 import form3 from '../assets/Service/Formation3.png'
 
 export function Service(){
-     let Header = {part1:'NOS',part2:"Services"}
+     let Header = {part1:'NOS',part2:"SERVICES"}
           return (<>
                <div className="relative mb-10 top-20 ">
                     <PageHeader Header={Header} />
@@ -28,7 +29,8 @@ export function Service(){
                     </p>
                     </div>
                     <div className="col-start-3 col-span-8 grid grid-cols-3 gap-x-3 mb-10 gap-y-8">
-                         <div className="relative overflow-hidden">
+                        <NavLink to='Inspection-Réglementaire-ESP'>
+                        <div className="relative overflow-hidden">
                               <img src={IRESP} alt="irsp" className="w-full h-[322px] inset-0" />
                               <div className="bg-gradient-to-br    from-primary via-primary opacity-85  to-transparent   object-fill absolute  shadow-lg  inset-0"></div>
                               <div className="absolute inset-0 text-white gap-y-10 p-3 flex flex-col justify-around ">
@@ -39,13 +41,10 @@ export function Service(){
                               </div>
 
                          </div>
-                         <div className="relative overflow-hidden">
+                        </NavLink>
+                       <NavLink to='Contrôle-Non-Destructifs'>
+                       <div className="relative overflow-hidden">
                               <img src={CND} alt="CND" className="w-full object-fill inset-0 h-[322px]" />
-
-                              
-
-                              
-
                               <div className="absolute inset-0 bg-slate-800 opacity-20"></div>
                               <div className="bg-gradient-to-tl from-primary via-transparent    to-secondary  object-fill absolute    shadow-lg  inset-0"></div>
   
@@ -58,6 +57,8 @@ export function Service(){
                               </div>
 
                          </div>
+                         </NavLink>
+                         <NavLink to="RIG-service">
                          <div className="relative overflow-hidden">
                               <img src={RIGS} alt="RIGS" className="w-full inset-0 h-[322px] rounded-none" />
                               <div className="bg-gradient-to-tr from-primary via-transparent to-other rounded-none absolute   inset-0 "></div>
@@ -69,6 +70,8 @@ export function Service(){
                               </div>
 
                          </div>
+                         </NavLink>
+                         <NavLink to="Contrôle-réglementaire-des-appareils-de-manutention-et-levage" className='w-full text-white hover:text-white col-span-full'>
                          <div className="col-span-3 relative ">
                               <img src={CRAML} alt="craml" className="h-[322px] w-full object cover" />
                               <div className="inset-0 absolute bg-gradient-to-r opacity-70 from-other via-other-100 to-transparent transition duration-300 ease-in-out hover:bg-gradient-to-r hover:from-primary hover:via-primary-200 hover:to-primary-200"></div>
@@ -85,10 +88,12 @@ export function Service(){
                               </div>
                               <div className="gradiant inset-0 absolute w-full  "></div>
                               <img src={triangle} alt="triangle"  className="inset-0 absolute transition duration-1000 top-1/2 w-10 scale-0 hover:scale-100 right-0 "/>
-                              </div>
+                         </div>
+                         </NavLink>
                          
                          <div className="col-span-full flex gap-x-4">
-                              <div className="w-1/2 relative">
+                           <NavLink to='Expertise-et-audit-type-ATEX' className="w-1/2 relative text-white hover:text-white">
+                           
                               <img src={EEATA} alt="eeta"  className="w-full h-[322px]"/>
                               <div className="inset-0 absolute bg-gradient-to-tl from-primary via-transparent to-other"></div>
                               <div className="absolute inset-0  z-10 flex flex-col justify-around p-5 ">
@@ -101,8 +106,10 @@ export function Service(){
                                   
                               </div>
 
-                              </div>
-                              <div className="w-1/2 relative">
+                             
+                           </NavLink>
+                            <NavLink to="Inspection-marchandises-avant-expédition" className="w-1/2 relative text-white hover:text-white">
+                         
                                    <img src={IMAE} alt="IMAE" className="w-full h-[322px]" />
                                    <div className="inset-0 absolute bg-gradient-to-t from-primary  via-secondary opacity-75 to-secondary">
                                    <div className="absolute inset-0  z-10 flex flex-col justify-around p-5 ">
@@ -116,10 +123,11 @@ export function Service(){
                               </div>
 
                               </div>
-                              </div>
+                        
+                            </NavLink>
 
                          </div>
-                         <div className="relative col-span-full">
+                         <NavLink to="Contrôle-réglementaire-des-équipement-&-installations-électriques" className="relative col-span-full text-white hover:text-white">
                               <img src={CREIE} alt="creie" className="object-cover w-full " />
                               <div className="inset-0 absolute bg-primary-200"></div>
                               <div className="absolute inset-0 gradiant1 z-10 flex flex-col justify-around p-5 ">
@@ -131,8 +139,8 @@ export function Service(){
                                    <p className="leading-relaxed z-10  mb-2 mr-4 px-4 font-light w-1/2 pr-10"> nous veillons à votre sécurité électrique en conformité avec les normes nationales et internationales. Nos experts vérifient périodiquement vos installations et appareils pour détecter toute anomalie potentielle.</p>
                                   
                               </div>
-                         </div>
-                         <div className=" relative w-full">
+                         </NavLink>
+                         <NavLink to="Assistance-technique" className="text-white hover:text-white relative w-full">
                               <img src={AT} alt="AT" className="w-full  h-[322px]"/>
                               <div className="inset-0 absolute bg-gradient-to-tr  from-primary-100 via-other-100 to-other-100 opacity-70"></div>
                               <div className="absolute inset-0 text-white gap-y-10 p-3 flex flex-col justify-around  ">
@@ -146,7 +154,7 @@ export function Service(){
                               </div>
                             
                               
-                         </div>
+                         </NavLink>
                          <div className="relative"><img src={EAER} alt="eaer" className="w-full h-[322px]" />
                               <div className="bg-gradient-to-tr from-primary via-transparent  to-secondary inset-0 absolute"></div>
                               <div className="absolute inset-0 text-white gap-y-10 p-3 flex flex-col justify-around ">

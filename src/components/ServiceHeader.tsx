@@ -76,7 +76,7 @@ export default function ServiceHeader(){
                headData.bg = FAPI
           break;
           case '/service/Formation-CND-LI-&-LII-renouvellement-certificat':
-               headData.desc ='Formation-CND-LI-&-LII-renouvellement-certificat'
+               headData.desc ='Formation CND LI & LII renouvellement certificat'
                headData.bg = FCND
           break;
           case '/service/Formation-et-sensibilisation':

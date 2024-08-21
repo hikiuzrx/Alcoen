@@ -1,5 +1,5 @@
 import listIcone from '../../assets/list-icone.svg'
-export default function IRESP(){
+export default function RIGS(){
      return(<>
      <div className="grid grid-cols-12">
           <section className="col-start-2 my-10 ml-10 col-span-10">

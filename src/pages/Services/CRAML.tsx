@@ -1,9 +1,9 @@
 import listIcone from '../../assets/list-icone.svg'
-export default function IRESP(){
+export default function CRAML(){
      return(<>
      <div className="grid grid-cols-12">
           <section className="col-start-2 my-10 ml-10 col-span-10">
-               <h2 className="text-primary font-semibold mb-10 text-5xl">
+               <h2 className="text-primary leading-normal font-semibold mb-10 text-5xl">
                Contrôle réglementaire des appareils de manutention et levage
                </h2>
                <p className="text-lg text-black leading-relaxed mr-10 pr-5 ">

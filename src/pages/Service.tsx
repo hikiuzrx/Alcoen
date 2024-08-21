@@ -155,6 +155,7 @@ export function Service(){
                             
                               
                          </NavLink>
+                         <NavLink to={'Expertise-assurance-et-réassurance'}>
                          <div className="relative"><img src={EAER} alt="eaer" className="w-full h-[322px]" />
                               <div className="bg-gradient-to-tr from-primary via-transparent  to-secondary inset-0 absolute"></div>
                               <div className="absolute inset-0 text-white gap-y-10 p-3 flex flex-col justify-around ">
@@ -165,7 +166,9 @@ export function Service(){
                                    <p className="leading-relaced mb-10 font-light  mr-4 px-4">Découvrez notre service d'Inspection Réglementaire des Équipements Sous Pression (ESP) chez ALCOEN</p>
                               </div>
                          </div>
-                         <div className="relative">
+                         </NavLink>
+                       <NavLink to={'Mise-à-disposition-du-personnel'}>
+                       <div className="relative">
                               <img src={MADDP} alt="MADDP"  className="w-full h-[322px]"/>
                               <div className="inset-0 absolute bg-gradient-to-tr  from-primary via-transparent to-secondary "></div>
                               <div className="absolute inset-0 text-white gap-y-10 p-3 flex flex-col justify-around ">
@@ -176,6 +179,7 @@ export function Service(){
                                    <p className="leading-relaced mb-10 font-light  mr-4 px-4"> Nous mettons à votre disposition une main-d'œuvre qualifiée et compétente, soigneusement sélectionnée pour s'adapter à divers secteurs d'activité</p>
                               </div>
                          </div>
+                       </NavLink>
 
                     </div>
                     <h2 className="col-start-3 col-span-8 text-6xl text-center leading-tight px-10 m-10 my-20 font-medium text-secondary">
@@ -183,7 +187,8 @@ export function Service(){
                     </h2>
                     <p className="text-lg text-other leading-relaxed text-center font-medium col-start-3 col-span-8 mb-10">Nos formations chez ALCOEN vous offrent une opportunité unique de développer vos compétences professionnelles. Que ce soit pour renforcer vos connaissances techniques, vous familiariser avec les normes industrielles ou améliorer vos pratiques,  nos programmes sont conçus pour répondre à vos besoins spécifiques. Faites un pas vers l'excellence professionnelle avec ALCOEN et accédez à un savoir-faire de pointe pour réussir dans votre domaine.</p>
                     <div className="col-start-3 col-span-8 gap-x-3 grid grid-cols-3 ">
-                    <div className="relative col-span-1 overflow-hidden mb-10">
+                 <NavLink to={'Formation-API-510-,-570,-,-579-,-653...etc.'}>
+                 <div className="relative col-span-1 overflow-hidden mb-10">
                               <img src={form3} alt="API 510" className="w-full min-h-[322px] inset-0" />
                               <div className="bg-gradient-to-tr    from-primary-100 via-primary-200    to-other    object-fill absolute  shadow-lg  inset-0"></div>
                               <div className="absolute inset-0 text-white gap-y-6 p-3 flex flex-col justify-center min-h-[340px] ">
@@ -197,6 +202,8 @@ export function Service(){
                               </div>
 
                     </div>
+                 </NavLink>
+                    <NavLink to={'Formation-CND-LI-&-LII-renouvellement-certificat'}>
                     <div className="relative col-span-1 overflow-hidden mb-10">
                               <img src={form1} alt="API 510" className="w-full min-h-[322px] inset-0" />
                               <div className= "  bg-gradient-to-tr    from-transparent    via-other-100 to-other opacity-75 object-fill absolute  shadow-lg  inset-0"></div>
@@ -211,7 +218,9 @@ export function Service(){
                               </div>
 
                     </div>
-                    <div className="relative col-span-1 overflow-hidden mb-10">
+                    </NavLink>
+                  <NavLink to={'Formation-et-sensibilisation'}>
+                  <div className="relative col-span-1 overflow-hidden mb-10">
                               <img src={form2} alt="API 510" className="w-full min-h-[322px] inset-0" />
                               <div className="bg-gradient-to-tr    from-primary      to-transparent   object-fill absolute  shadow-lg  inset-0"></div>
                               <div className="absolute inset-0 text-white gap-y-6 p-3 flex flex-col justify-center min-h-[340px] ">
@@ -226,6 +235,7 @@ export function Service(){
                               </div>
 
                     </div>
+                  </NavLink>
 
                     </div>
 

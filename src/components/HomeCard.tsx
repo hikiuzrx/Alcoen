@@ -12,7 +12,7 @@ import saipem from '../assets/companies-logos/saipem.png'
 import helison from '../assets/companies-logos/helison.png'
 export default function HomeCard(){
      return (<>
-          <div className="grid grid-cols-6 grid-row-2 gap-4 ">
+          <div className="grid xl:grid-cols-6 lg:grid-cols-4 grid-row-2 gap-4 ">
                <div className="rounded-xl flex justify-center items-center h-[130px] bg-white"><img className='object-cover drop-shadow-md' src={sontarak} alt="logo" /></div>
                <div className="rounded-xl flex justify-center items-center h-[130px] bg-white"><img className='object-cover drop-shadow-md' src={hilos} alt="log" /></div>
                <div className="rounded-xl flex justify-center items-center h-[130px] bg-white"><img className='object-cover drop-shadow-md' src={beakine} alt="logo" /></div>

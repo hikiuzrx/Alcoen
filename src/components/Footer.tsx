@@ -41,8 +41,8 @@ export function Footer() {
         </li>
       </ul>
       <ul className="flex flex-col items-start w-1/3 gap-2  ">
-        <li className="text-4xl font-semibold mb-4"><h3>Adresse</h3></li>
-        <li className="text-lg pr-20">
+        <li className="xl:text-4xl lg:text-3xl font-semibold mb-4"><h3>Adresse</h3></li>
+        <li className="xl:text-lg lg:text-base xl:pr-20 lg:pr-14">
           Address Cité Mohamed Boudiaf EPLF Bt5, 4 El Marsa Ex Jen Bart BP2, Alger; Algerie
         </li>
         <li className="text-4xl font-semibold my-4"><h3>Téléphone</h3></li>

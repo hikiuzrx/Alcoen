@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: { 
+      margin:{
+        'custom-mr':"0.125rem",
+        'custom-mr-2': "0.7rem"
+      },
       listStyleImage: {
         triangle: 'url("/src/assets/list-icone.svg")',
       },
@@ -57,15 +61,21 @@ export default {
         other:"#282F3A",
         'other-100':'#282f3abf'
       },
+      fontSize :{
+        '4.5xl':"2.75rem",
+        '5.5xl':'3.75rem'
+      },
       backgroundImage:{
         'home':"url('./src/assets/home-page.jpg)"
       },
       width:{
         homeS:"385px",
+        homeXs:"345px",
         homeS2:"839px",
       },
       height:{
         homeS:"521px",
+        homeXs:"421px",
         homeS2:"1267px",
         homeS3:"621px"
       },

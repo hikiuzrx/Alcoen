@@ -2249,3 +2249,13 @@ button:focus-visible {
   --tw-bg-opacity: 1;
   background-color: rgb(250 69 22 / var(--tw-bg-opacity));
 }
+
+@media (min-width: 1024px){
+  .lg\:w-11{
+    width: 2.75rem;
+  }
+
+  .lg\:w-10\/12{
+    width: 83.333333%;
+  }
+}

@@ -12,24 +12,24 @@ export function Home(){
      return (
           <>
                <section className='relative top-0 mt-3 mb-10'>
-               <div className="bg-[url('../../public/home-page.jpg')]  bg-cover bg-no-repeat relative ">
+               <div className="bg-[url('../../public/home-page.jpg')] max-xl:bg-cover lg:bg-cover bg-no-repeat relative ">
                <div className='grid grid-cols-2 relative  '>
                     <div className='flex justify-center items-start flex-col  '>
-                         <h1 className='text-secondary m-6 ml-20 pl-5 mb-2 text-6xl '>Solutions d'Ingénierie</h1>
-                         <h1 className='text-secondary m-6 ml-20 pl-5 mt-2 text-6xl'> Pour un Avenir</h1>
+                         <h1 className='text-secondary my-6  font-normal  ml-20 pl-5 mb-2 xl:text-6xl '>Solutions d'Ingénierie</h1>
+                         <h1 className='text-secondary my-6  font-normal ml-20 pl-5 mt-2 xl:text-6xl'> Pour un Avenir</h1>
                          
                         <div className='flex justify-between'>
                         <DynamicText/>
                         </div>
                         <div>
-                              <p className='text-secondary leading-relaxed w-auto mx-14 my-4 px-28'>  
+                              <p className='text-secondary xl:text-sm  lg:text-xs leading-relaxed w-auto mx-14  xl:mx-12 my-4 px-28'>  
                                    ALCOEN est là pour vous accompagner.
                                    Notre équipe qualifiée vous offre une gamme complète de solutions
                                    personnalisées,Contactez-nous dès maintenant pour découvrir comment
                                    nous pouvons vous aider à atteindre vos objectifs avec succès.
                               </p>
                              <div className='flex justify-center'>
-                             <NavLink to={'/contact'} className='text-white bg-primary rounded-lg p-2 px-4 text-2xl m-4 font-semibold hover:text-white'>
+                             <NavLink to={'/contact'} className='text-white bg-primary rounded-lg p-2 px-4 lg:px-2 max-xl:px-3 text-2xl m-2 font-semibold hover:text-white'>
                                    Contact
                               </NavLink>
                               <NavLink className='text-primary flex justify-start m-2 ' to={'/service'}>
@@ -42,9 +42,11 @@ export function Home(){
                              </div>
                          </div>
                     </div>
-                    <div className='flex justify-end'>
+                    <div className='flex justify-end  '>
                          
-                         <img src={img} alt="" className='brightness-110  mix-blend-color-burn opacity-90  ' />
+                         <img src={img} alt="" 
+                         className='brightness-110 max-w-full mt-4 max-h-full lg:w-8/12 lg:h-[450px] max-xl:h-[550px] max-xl:w-8/12
+                         mix-blend-color-burn opacity-90  ' />
                          
                     </div>
                </div>

@@ -67,7 +67,11 @@ export default {
       },
       fontSize :{
         '4.5xl':"2.75rem",
-        '5.5xl':'3.75rem'
+        '5.5xl':'3.75rem',
+        '2.5xl':"1.7rem",
+        'xxs':"0.5rem",
+        "1.4xl":'1.4rem'
+        
       },
       backgroundImage:{
         'home':"url('./src/assets/home-page.jpg)"

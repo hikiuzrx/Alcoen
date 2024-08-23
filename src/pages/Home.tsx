@@ -14,26 +14,26 @@ export function Home(){
                <section className='relative top-0 mt-3 mb-10'>
                <div className="bg-[url('../../public/home-page.jpg')] max-xl:bg-cover lg:bg-cover bg-no-repeat relative ">
                <div className='flex  relative '>
-                    <div className='flex justify-center items-start flex-col  w-9/12  '>
-                         <h1 className='text-secondary my-6 md:ml-10 font-normal  lg:ml-20 pl-5 md:mb-0 mb-2 lg:text-5xl xl:text-6xl md:text-4.5xl '>Solutions d'Ingénierie</h1>
-                         <h1 className='text-secondary my-6 md:ml-10 font-normal lg:ml-20 pl-5 mt-2 lg:text-5xl xl:text-6xl md:text-4.5xl'> Pour un Avenir</h1>
+                    <div className='flex justify-center items-start flex-col  w-10/12  '>
+                         <h1 className='text-secondary my-6 md:ml-10 xs:ml-4 font-normal  lg:ml-20 pl-5 md:mb-0 xs:mb-1 mb-2 lg:text-5xl xl:text-6xl md:text-4.5xl  xs:pl-2 xs:text-2xl '>Solutions d'Ingénierie</h1>
+                         <h1 className='text-secondary my-6 md:ml-10 xs:ml-4 font-normal lg:ml-20 pl-5 mt-2 lg:text-5xl xl:text-6xl md:text-4.5xl xs:pl-2 xs:text-2xl'> Pour un Avenir</h1>
                          
                         <div className='flex justify-between'>
                         <DynamicText/>
                         </div>
                         <div className='xl:mr-20 xl:pr-32'>
-                              <p className='text-secondary   lg:text-sm md:leading-normal xl:leading-relaxed w-auto xl:mx-14 lg:mr-20   md:mr-4  my-4  md:text-sm md:px-14 xl:px-28 lg:px-28'>  
+                              <p className='text-secondary xs:text-xxs xs:ml-10    lg:text-sm md:leading-normal xl:leading-relaxed w-auto xl:mx-14 lg:mr-20   md:mr-4  my-4  md:text-sm md:px-14 xl:px-28 lg:px-28'>  
                                    ALCOEN est là pour vous accompagner.
                                    Notre équipe qualifiée vous offre une gamme complète de solutions
                                    personnalisées,Contactez-nous dès maintenant pour découvrir comment
                                    nous pouvons vous aider à atteindre vos objectifs avec succès.
                               </p>
                              <div className='flex justify-center'>
-                             <NavLink to={'/contact'} className='text-white bg-primary rounded-lg p-2 px-4 lg:px-2 max-xl:px-3 xl:text-2xl lg:text-xl m-2 font-semibold hover:text-white'>
+                             <NavLink to={'/contact'} className='text-white bg-primary rounded-lg p-2 px-4 lg:px-2 max-xl:px-3 xl:text-2xl lg:text-xl xs:text-base m-2 font-semibold hover:text-white'>
                                    Contact
                               </NavLink>
                               <NavLink className='text-primary flex justify-start m-2 ' to={'/service'}>
-                                   <div className='flex justify-start lg:text-sm items-center'>
+                                   <div className='flex justify-start lg:text-sm xs:text-xs items-center'>
                                         <span className='text-primary inline-block'>Voir les services  </span>
                                         <img src={triangle} alt="icon" className='inline-block fill-primary w-5  xl:w-5 lg:w-4 h-auto'/>
                                    </div>
@@ -42,7 +42,7 @@ export function Home(){
                              </div>
                          </div>
                     </div>
-                    <div className='flex justify-end w-1/2 md:w-1/3  '>
+                    <div className='flex justify-end w-1/2 md:w-1/3 xs:w-2/5  '>
                          
                          <img src={img} alt="" 
                          className='brightness-110 max-w-full mt-4 w-full 
@@ -56,12 +56,12 @@ export function Home(){
                </div>
           </section>
           <section className="bg-gradient-to-t from-[url('../../public/home-page.jpg)] to-white ">
-               <div className='grid grid-cols-8 ml-24 pl-4 '>
-                    <div className='col-span-2 flex flex-col  justify-start items-start lg:ml-14  ml-24 md:ml-10 '>
-                         <h2 className='text-secondary text-5xl lg:text-4xl xl:text-4.5xl md:text-3xl xl:mb-2 font-medium md:mb-2  mt-2 md:pr-0  pr-20 lg:pr-0 mb-4 lg:mb-1'>Qui est</h2>
-                         <h2 className='text-primary font-semibold pr-6 lg:pr-0 lg:text-4xl md:text-3xl text-5xl xl:text-4.5xl mb-2'>ALCOEN<span className='text-secondary md:text-3xl text-4xl'>?</span></h2>
+               <div className='grid md:grid-cols-12 xs:grid-cols-12 ml-24 pl-4 '>
+                    <div className='col-start-2 ml-10 flex flex-col xs:col-start-1 xs:col-span-full  justify-start items-start lg:ml-14   md:ml-10 xs:ml-4 '>
+                         <h2 className='text-secondary text-5xl lg:text-4xl xl:text-4.5xl xs:text-2.5xl md:text-3xl xl:mb-2 font-medium md:mb-2 xs:mb-1  mt-2 md:pr-0 xs:pr-0 xs:mr-1  pr-20 lg:pr-0 mb-4 lg:mb-1'>Qui est</h2>
+                         <h2 className='text-primary font-semibold pr-6 xs:text-2.5xl lg:pr-0 lg:text-4xl md:text-3xl text-5xl xl:text-4.5xl mb-2'>ALCOEN<span className='text-secondary md:text-3xl lg:text-4xl'>?</span></h2>
                     </div>
-                    <div className='col-span-6 mt-2 ml-10 md:mr-16 lg:mr-24 mr-48 md:pr-20 pr-28'>
+                    <div className='col-span-6 xs:col-start-2 xs:ml-10 xs:col-span-8 mt-2 ml-10 md:mr-16 lg:mr-24 mr-48 md:pr-20 xs:pr-12 xs:mr-2  pr-28'>
                         <div>
                               <span className='pr-10 md:leading-relaxed lg:leading-loose'><span className='text-secondary md:leading-relaxed lg:leading-loose text-lg font-medium  '>ALCOEN est un acteur incontournable dans les domaines de l'inspection, de l'expertise </span>
                         <span className='text-secondary md:leading-relaxed lg:leading-loose text-lg font-medium mt-4 lg:mr-14 md:mr-8  '>et de l'ingénierie en Algérie. Forts d'une expertise inestimable et d'une expérience de plus de deux décennies, nous nous engageons à fournir des solutions sur mesure et de haute qualité à nos clients.  Chez ALCOEN, nous nous efforçons d'aller au-delà des attentes pour être votre partenaire de confiance dans la réalisation de vos objectifs .

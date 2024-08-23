@@ -560,6 +560,10 @@ video {
   visibility: visible;
 }
 
+.fixed{
+  position: fixed;
+}
+
 .absolute{
   position: absolute;
 }
@@ -570,6 +574,11 @@ video {
 
 .inset-0{
   inset: 0px;
+}
+
+.inset-y-0{
+  top: 0px;
+  bottom: 0px;
 }
 
 .left-0{
@@ -610,6 +619,10 @@ video {
 
 .z-10{
   z-index: 10;
+}
+
+.z-50{
+  z-index: 50;
 }
 
 .col-span-1{
@@ -1034,6 +1047,10 @@ video {
   height: 521px;
 }
 
+.h-6{
+  height: 1.5rem;
+}
+
 .max-h-\[1002px\]{
   max-height: 1002px;
 }
@@ -1122,6 +1139,10 @@ video {
   width: 385px;
 }
 
+.w-6{
+  width: 1.5rem;
+}
+
 .max-w-\[252px\]{
   max-width: 252px;
 }
@@ -1186,6 +1207,16 @@ video {
 
 .translate-y-8{
   --tw-translate-y: 2rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-0{
+  --tw-translate-x: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-full{
+  --tw-translate-x: 100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1407,6 +1438,10 @@ video {
   border-width: 2px;
 }
 
+.border-0{
+  border-width: 0px;
+}
+
 .border-b{
   border-bottom-width: 1px;
 }
@@ -1438,6 +1473,11 @@ video {
 
 .border-primary-100{
   border-color: #fa45168c;
+}
+
+.border-other{
+  --tw-border-opacity: 1;
+  border-color: rgb(40 47 58 / var(--tw-border-opacity));
 }
 
 .bg-about1{
@@ -1982,6 +2022,11 @@ video {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+.outline-none{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 .brightness-110{
   --tw-brightness: brightness(1.1);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -2223,8 +2268,25 @@ button:focus-visible {
 }
 
 @media (min-width: 768px){
+  .md\:col-span-1{
+    grid-column: span 1 / span 1;
+  }
+
+  .md\:m-2{
+    margin: 0.5rem;
+  }
+
+  .md\:mx-2{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
   .md\:mb-0{
     margin-bottom: 0px;
+  }
+
+  .md\:mb-1{
+    margin-bottom: 0.25rem;
   }
 
   .md\:mb-2{
@@ -2233,6 +2295,18 @@ button:focus-visible {
 
   .md\:ml-10{
     margin-left: 2.5rem;
+  }
+
+  .md\:mr-1{
+    margin-right: 0.25rem;
+  }
+
+  .md\:mr-1\.5{
+    margin-right: 0.63rem;
+  }
+
+  .md\:mr-12{
+    margin-right: 3rem;
   }
 
   .md\:mr-16{
@@ -2247,8 +2321,28 @@ button:focus-visible {
     margin-right: 2rem;
   }
 
-  .md\:mr-12{
-    margin-right: 3rem;
+  .md\:mt-4{
+    margin-top: 1rem;
+  }
+
+  .md\:mb-3{
+    margin-bottom: 0.75rem;
+  }
+
+  .md\:flex{
+    display: flex;
+  }
+
+  .md\:grid{
+    display: grid;
+  }
+
+  .md\:hidden{
+    display: none;
+  }
+
+  .md\:h-\[124px\]{
+    height: 124px;
   }
 
   .md\:h-home2xs{
@@ -2268,9 +2362,22 @@ button:focus-visible {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
+  .md\:-translate-y-16{
+    --tw-translate-y: -4rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .md\:translate-y-4{
     --tw-translate-y: 1rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .md\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:px-14{
@@ -2295,6 +2402,11 @@ button:focus-visible {
     font-size: 2.75rem;
   }
 
+  .md\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+
   .md\:text-7xl{
     font-size: 4.5rem;
     line-height: 1;
@@ -2315,6 +2427,10 @@ button:focus-visible {
 }
 
 @media (min-width: 1024px){
+  .lg\:m-4{
+    margin: 1rem;
+  }
+
   .lg\:mx-16{
     margin-left: 4rem;
     margin-right: 4rem;
@@ -2348,6 +2464,22 @@ button:focus-visible {
     margin-right: 0.7rem;
   }
 
+  .lg\:mb-5{
+    margin-bottom: 1.25rem;
+  }
+
+  .lg\:mt-7{
+    margin-top: 1.75rem;
+  }
+
+  .lg\:flex{
+    display: flex;
+  }
+
+  .lg\:hidden{
+    display: none;
+  }
+
   .lg\:h-\[162px\]{
     height: 162px;
   }
@@ -2360,6 +2492,10 @@ button:focus-visible {
     width: 1rem;
   }
 
+  .lg\:w-1\/2{
+    width: 50%;
+  }
+
   .lg\:-translate-y-9{
     --tw-translate-y: -2.25rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -2367,6 +2503,26 @@ button:focus-visible {
 
   .lg\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:flex-row{
+    flex-direction: row;
+  }
+
+  .lg\:flex-col{
+    flex-direction: column;
+  }
+
+  .lg\:items-start{
+    align-items: flex-start;
+  }
+
+  .lg\:justify-evenly{
+    justify-content: space-evenly;
+  }
+
+  .lg\:gap-y-20{
+    row-gap: 5rem;
   }
 
   .lg\:bg-cover{
@@ -2539,6 +2695,10 @@ button:focus-visible {
   .xl\:text-lg{
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .xl\:leading-loose{
+    line-height: 2;
   }
 
   .xl\:leading-relaxed{

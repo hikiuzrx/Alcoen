@@ -40,10 +40,10 @@ export function DynamicText() {
 
   return (
     <div>
-      <span className="text-9xl lg:text-8xl  xl:text-9xl text-primary pl-5 ml-20 m-4 mr-1 font-bold  mix-blend-color-burn">
+      <span className="text-9xl lg:text-8xl md:text-7xl xl:text-9xl text-primary pl-5 md:ml-10 lg:ml-20 m-4 mr-1 font-bold  mix-blend-color-burn">
         {span1}
       </span>
-      <span className="text-9xl lg:text-8xl xl:text-9xl text-primary  m-4 ml-1 font-bold   mix-blend-color-burn">
+      <span className="text-9xl lg:text-8xl md:text-7xl xl:text-9xl text-primary  m-4 ml-1 font-bold   mix-blend-color-burn">
         {span2}
       </span>
     </div>

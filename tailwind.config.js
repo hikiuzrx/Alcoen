@@ -6,9 +6,13 @@ export default {
   ],
   theme: {
     extend: { 
+      screens:{
+        "xs":"320px"
+      },
       margin:{
         'custom-mr':"0.125rem",
-        'custom-mr-2': "0.7rem"
+        'custom-mr-2': "0.7rem",
+        '1.5':"0.63rem"
       },
       listStyleImage: {
         triangle: 'url("/src/assets/list-icone.svg")',
@@ -72,10 +76,13 @@ export default {
         homeS:"385px",
         homeXs:"345px",
         homeS2:"839px",
+        homeM:"415px",
       },
       height:{
+        
         homeS:"521px",
         homeXs:"421px",
+        home2xs: "381px",
         homeS2:"1267px",
         homeS3:"621px"
       },

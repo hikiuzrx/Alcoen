@@ -142,7 +142,7 @@ function RouteNavLayout() {
       <main className="mt-16 pt-5 flex-grow">
         <Outlet />
       </main>
-      <Footer />
+      <Footer /> 
     </>
   );
 }

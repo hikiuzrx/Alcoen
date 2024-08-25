@@ -9,10 +9,14 @@ export default {
       screens:{
         "xs":"320px"
       },
+      padding:{
+        '0.5':'0.2rem'
+      },
       margin:{
         'custom-mr':"0.125rem",
         'custom-mr-2': "0.7rem",
-        '1.5':"0.63rem"
+        '1.5':"0.63rem",
+        '1.6':'0.65rem'
       },
       listStyleImage: {
         triangle: 'url("/src/assets/list-icone.svg")',
@@ -69,8 +73,13 @@ export default {
         '4.5xl':"2.75rem",
         '5.5xl':'3.75rem',
         '2.5xl':"1.7rem",
+        '3.5xl':'2rem',
+        's':"0.9rem",
+        "m":"0.85rem",
+
         'xxs':"0.5rem",
-        "1.4xl":'1.4rem'
+        "1.4xl":'1.4rem',
+        "1.2xl":"1.33rem"
         
       },
       backgroundImage:{
@@ -81,9 +90,11 @@ export default {
         homeXs:"345px",
         homeS2:"839px",
         homeM:"415px",
+        home3xs:'165px'
       },
       height:{
-        
+        home5xl: '55px',
+        home3x:'240px',
         homeS:"521px",
         homeXs:"421px",
         home2xs: "381px",

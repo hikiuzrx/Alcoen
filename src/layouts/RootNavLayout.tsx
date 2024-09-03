@@ -2,6 +2,8 @@ import { NavLink, Outlet } from "react-router-dom";
 import { useState } from "react";
 import { Footer } from "../components/Footer";
 import logo from '../assets/logo1.jpg';
+import Menu from '../assets/menu-icon.svg';
+import close from '../assets/close.svg'
 
 function RouteNavLayout() {
   const [activeLink, setActiveLink] = useState<string | null>(null);
@@ -40,20 +42,7 @@ function RouteNavLayout() {
               onClick={() => setMenuOpen(!menuOpen)}
               className="text-primary focus:outline-none mr-2 p-3"
             >
-              <svg
-                className="w-6 h-6  "
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                />
-              </svg>
+           <img src={Menu} alt="menu btn" className="w-6 h-6" />
             </button>
           </div>
           {/* Navigation Links */}
@@ -101,10 +90,10 @@ function RouteNavLayout() {
           } md:hidden`}
         >
           <button
-            className="text-primary outline-none border-0"
+            className="text-primary bg-white p-2 outline-none "
             onClick={() => setMenuOpen(!menuOpen)}
           >
-            CLOSE
+            <img src={close} alt="close btn" className="w-8  border-2 border-black rounded-lg bg-black h-8 " />
           </button>
           <div className="flex flex-col items-start mt-16">
             <NavLink

@@ -87,11 +87,11 @@ export default function ServiceHeader(){
      }
      return (<>
           <div 
-          className={`relative mb-10 top-3 ml-0 w-full  bg-cover bg-no-repeat `}
+          className={`relative  top-3 ml-0 w-full  bg-cover bg-no-repeat `}
 
           >
-               <img src={headData.bg} alt=""className='w-full' />
-               <div className='inset-0 absolute'>
+               <img src={headData.bg} alt=""className='h-[400px] w-full' />
+               <div className='inset-0 absolute '>
                <button
                 className='bg-transparent hover:border-secondary  hover:border-2
                   border-2 relative p-1 top-6 mb-2 left-28 border-gray-200'
@@ -101,9 +101,9 @@ export default function ServiceHeader(){
                </button>
           <h1 className="flex items-center mt-4">
                
-          <div className="w-40  h-40 inline-block bg-secondary"></div>
+          <div className="md:w-40 xs:w-24 xs:h-24 md:h-40 inline-block bg-secondary"></div>
      
-          <div className='mt-5'>
+          <div className='mt-5 md:text-5xl xs:text-3.5xl'>
           <p className="text-primary inline-block relative  ml-4 mt-4 m-2 ">
             {headData.header.part1}
             </p>

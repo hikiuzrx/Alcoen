@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: { 
       screens:{
-        "xs":"320px"
+        "xs":"320px",
+        's':"425px"
       },
       padding:{
         '0.5':'0.2rem'
@@ -76,7 +77,7 @@ export default {
         '3.5xl':'2rem',
         's':"0.9rem",
         "m":"0.85rem",
-
+        'x':"0.65rem",
         'xxs':"0.5rem",
         "1.4xl":'1.4rem',
         "1.2xl":"1.33rem"

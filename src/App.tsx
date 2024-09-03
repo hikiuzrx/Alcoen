@@ -25,13 +25,14 @@ import EATA from "./pages/Services/EATA";
 import AT from "./pages/Services/AT";
 import EAER from "./pages/Services/EAER";
 import CREIE from "./pages/Services/CREIE";
+import { sendEmail } from "./pages/Contact";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RouteNavLayout/>}>
       <Route path="/" element={<Home/>}/>
       <Route path="a-propos" element={<Apropos/>}/>
-      <Route path="contact" element={<Contact/>}/>
+      <Route path="contact" element={<Contact/>} action={sendEmail} />
       
       <Route path="service" element={<ServicesLayout/>}>
       <Route index element={<Service/>}/>

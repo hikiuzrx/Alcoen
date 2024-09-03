@@ -197,7 +197,7 @@ export function Apropos() {
               </p>
             
             </div>
-            <div className="w-full h-full flex justify-start py-16 lg:items-center xs:justify-center border-2 border-black ">
+            <div className="w-full h-full flex justify-start py-16 lg:items-center xs:justify-center  ">
               <div className="bg-primary xs:translate-y-40 md:translate-y-0 my-10 xl:ml-10 xs:-ml-4  lg:ml-4 md:ml-1 bg-cover size-fit ">
                 <img src={aboutP1} alt="img" className="xl:-translate-x-5 lg:-translate-x-3 md:-translate-x-2 md:translate-y-2 xs:-translate-x-2 xs:translate-y-2 xs:h-[210px] md:h-auto lg:translate-y-3  xl:translate-y-5" />
               </div>

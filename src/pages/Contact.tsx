@@ -42,7 +42,7 @@ export function  Contact(){
                               <label htmlFor="uClient" className="text-other md:text-base xs:text-xs  ">Je souhaite être informé(e) des événements, actualités, produits et services <span className="font-semibold">d'ALCOEN</span> </label>
                               </div>
                               <div className="col-span-2 flex gap-4">
-                              <input required type="checkbox" name="sCopy" className="w-7 h-5 -ml-0.5 mt-0.5   border-2 opacity-35  after:border-gray-500 rounded-md checked:opacity-100 accent-primary forced-color-adjust-none peer-checked:border-other  " />
+                              <input required type="checkbox" name="sCopy" className="w-7 h-5 md:w-6 -ml-0.5 mt-0.5   border-2 opacity-35  after:border-gray-500 rounded-md checked:opacity-100 accent-primary forced-color-adjust-none peer-checked:border-other  " />
                               <label htmlFor="sCopy" className="text-other md:text-base xs:text-xs ">Envoyez une copie de ce message à mon adresse e-mail. </label>
                               </div>
                               <div className="col-span-2 flex justify-center items-center">

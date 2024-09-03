@@ -73,16 +73,17 @@ export function Apropos() {
         
         <PageHeader Header={Header}/>
         <section className="grid grid-cols-12">
-          <div className="m-10 col-start-2 col-span-full">
-            <h2 className="text-6xl font-semibold text-secondary">
+          <div className="md:ml-10 xs:ml-3 mt-10 mb-4 col-start-2 col-span-full">
+            <h2 className="md:text-6xl xs:text-4xl font-semibold text-secondary">
               À la découverte <span className="text-primary">d'Alcoen</span>
             </h2>
-            <p className="text-4xl text-secondary my-8">Illuminer l'Essence de Notre Entreprise</p>
+            <p className="md:text-4xl xs:text-2.5xl text-secondary md:my-8 xs:my-2">Illuminer l'Essence de Notre Entreprise</p>
           </div>
-          <div className="col-span-full col-start-2 m-10 flex">
-            <div className="w-1/2 flex-col p-2">
+          <div className="col-span-full col-start-2 md:mb-10 xs:ml-3 xs:mr-1 flex">
+            <div className=" flex-col py-2">
               <div className="">
-                <span className="text-secondary text-base leading-relaxed">
+              <img src={vector} alt="vector" className=" w-1/2 items-center object-contain my-10 translate-y-8 pb-10 mb-4 float-right" />
+                <span className="text-secondary xs:pr-2 pt-10 break-normal md:text-base xs:text-xs leading-relaxed">
                   ALCOEN (Algerian Office of Consulting & Engineering) brille au cœur de divers
                   secteurs, tels que l'Énergie, le Pétrole, la Pétrochimie, l'Industrie,
                   l'Agroalimentaire...etc. Notre richesse en expertise découle d'un parcours
@@ -104,31 +105,31 @@ export function Apropos() {
                 </span>
               </div>
               <div className="mt-14">
-                <h2 className="text-secondary text-[64px] font-semibold text-shadow-sm">
+                <h2 className="text-secondary lg:text-[64px] font-semibold md:text-nowrap md:text-5xl xs:text-4xl">
                   Notre <span className="text-primary">Vision</span>
                 </h2>
-                <h3 className="text-secondary text-shadow-sm text-5xl my-4">Assurer l'avenir,</h3>
-                <h3 className="text-primary text-shadow-sm text-5xl my-4">inspirer l'excellence</h3>
+                <h3 className="text-secondary  lg:text-5xl md:text-4xl my-4 xs:text-3xl">Assurer l'avenir,</h3>
+                <h3 className="text-primary  lg:text-5xl md:text-4xl md:text-nowrap xs:text-3xl my-4">inspirer l'excellence</h3>
               </div>
               <div className="mt-20">
-                <h2 className="text-6xl my-4 text-secondary font-medium text-shadow-sm">
+                <h2 className="xl:text-6xl lg:text-5.5xl md:text-4.5xl xs:text-3.5xl md:text-nowrap lg:text-nowrap my-4 lg:mb-3 text-secondary font-medium ">
                   Fondement de Notre
                 </h2>
-                <h2 className="text-primary my-6 text-6xl text-shadow-sm font-semibold">
+                <h2 className="text-primary mb-6 mt-4 lg:text-5.5xl md:text-4.5xl xs:text-3.5xl  lg:mt-3 text-nowrap xl:text-6xl  font-semibold">
                   Engagement
                 </h2>
               </div>
               <div>
                 <div>
-                  <div className="space-y-4 flex justify-between w-full mr-8">
+                  <div className="space-y-4 flex w-1/2 justify-between  mr-8">
                     <div className="">
-                      <h2 className="text-secondary text-5xl mb-5 font-semibold text-shadow-sm">
+                      <h2 className="text-secondary md:text-5xl xs:text-3.5xl mb-5 font-semibold">
                         <span className="text-primary">{firstLetter}</span>
                         {header}
                       </h2>
-                      <p className="text-shadow-sm leading-relaxed text-secondary">{content}</p>
+                      <p className=" leading-relaxed xs:text-xs md:text-base text-secondary">{content}</p>
                     </div>
-                    <div className="flex flex-col pt-5 items-end justify-center gap-y-4 pl-4">
+                    <div className="flex  flex-col w-full pt-5 items-end justify-center gap-y-4 pl-4">
                       <label className="flex items-center cursor-pointer">
                         <input
                           type="radio"
@@ -138,7 +139,7 @@ export function Apropos() {
                           className="hidden peer"
                           onChange={() => handleRadio(0)}
                         />
-                        <span className="w-5 h-5 text-black inline-block rounded-full border-spacing-2 border-2 border-primary-100 peer-checked:border-other peer-checked:bg-primary transition"></span>
+                        <span className="md:w-5 md:h-5 xs:w-4 xs:h-4  text-black inline-block rounded-full border-spacing-2 border-2 border-primary-100 peer-checked:border-other peer-checked:bg-primary transition"></span>
                       </label>
                       <label className="flex items-center cursor-pointer">
                         <input
@@ -149,7 +150,7 @@ export function Apropos() {
                           className="hidden peer"
                           onChange={() => handleRadio(1)}
                         />
-                        <span className="w-5 h-5 inline-block rounded-full border-spacing-2 border-2 border-primary-100 peer-checked:border-other peer-checked:bg-primary transition"></span>
+                        <span className="md:w-5 md:h-5 xs:w-4 xs:h-4 inline-block rounded-full border-spacing-2 border-2 border-primary-100 peer-checked:border-other peer-checked:bg-primary transition"></span>
                       </label>
                       <label className="flex items-center cursor-pointer">
                         <input
@@ -160,26 +161,26 @@ export function Apropos() {
                           className="hidden peer"
                           onChange={() => handleRadio(2)}
                         />
-                        <span className="w-5 h-5 inline-block rounded-full border-spacing-2 border-2 border-primary-100 peer-checked:border-other peer-checked:bg-primary transition"></span>
+                        <span className="md:w-5 md:h-5 xs:w-4 xs:h-4 inline-block rounded-full border-spacing-2 border-2 border-primary-100 peer-checked:border-other peer-checked:bg-primary transition"></span>
                       </label>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="w-1/2 items-center object-contain my-10">
-              <img src={vector} alt="vector" className="translate-y-28 pb-10 mb-4" />
-            </div>
+            
+              
+            
           </div>
         </section>
         <section className="grid grid-cols-12">
-          <div className="ml-10 col-start-2 col-span-full flex m-10">
-            <div className="w-3/5">
-              <h2 className="text-6xl font-semibold text-secondary">
+          <div className="md:ml-10 xs:ml-3 col-start-2 col-span-full flex my-10 md:mr-10 xs:mr-3">
+            <div className="md:w-3/5 xs:w-2/3">
+              <h2 className="xl:text-6xl md:text-4.5xl xs:text-3.5xl lg:text-5.5xl lg:leading-tight font-semibold text-secondary">
                 L'Avantage <span className="text-primary">d'Alcoen</span>
               </h2>
-              <p className="text-4xl text-secondary my-8">Ce qui Nous Distingue</p>
-              <p className="text-secondary font-medium pr-3 text-base leading-loose float right">
+              <p className="xl:text-4xl lg:text-3xl xs:text-1.4xl md:text-2.5xl xs:text-nowrap text-secondary xl:my-8 lg:my-5">Ce qui Nous Distingue</p>
+              <p className="text-secondary xs:float-right md:float-none xs:text-xs font-medium pr-3 md:text-xs md:leading-relaxed lg:text-base leading-loose float right">
                 L'expérience et l'excellence sont au cœur de notre engagement envers nos clients et
                 institutions. Chez Alcoen, notre équipe incarne la synergie parfaite entre des
                 professionnels expérimentés et de nouveaux talents issus d'universités et d'écoles
@@ -194,20 +195,22 @@ export function Apropos() {
                 ALCOEN, nous sommes fiers de notre avantage concurrentiel qui repose sur notre
                 engagement envers l'excellence, l'innovation et la satisfaction client.
               </p>
+            
             </div>
-            <div className="w-2/5 h-full flex justify-start py-16">
-              <div className="bg-primary my-10 ml-6">
-                <img src={aboutP1} alt="img" className="-translate-x-5 translate-y-5" />
+            <div className="w-full h-full flex justify-start py-16 lg:items-center xs:justify-center  ">
+              <div className="bg-primary xs:translate-y-40 md:translate-y-0 my-10 xl:ml-10 xs:-ml-4  lg:ml-4 md:ml-1 bg-cover size-fit ">
+                <img src={aboutP1} alt="img" className="xl:-translate-x-5 lg:-translate-x-3 md:-translate-x-2 md:translate-y-2 xs:-translate-x-2 xs:translate-y-2 xs:h-[210px] md:h-auto lg:translate-y-3  xl:translate-y-5" />
               </div>
             </div>
+          
           </div>
-          <div className="col-start-2 mx-10 col-span-11  flex justify-center">
+          <div className="col-start-2 md:mx-10 xs:mx-1 md:col-span-11 xs:col-span-full  flex justify-center">
             
-              <div className="w-[488px]  mb-10 mr-5 shadow-black relative drop-shadow-xl  overflow-hidden h-[340px] ">
+              <div className="w-[488px]  mb-10 xs:ml-3 mr-5 shadow-black relative drop-shadow-xl  overflow-hidden  md:h-[340px] xs:h-[240px] ">
                 <img
                   src={aboutP2}
                   alt="img"
-                  className="mix-blend-multiply w-[488px] h-[340px] drop-shadow-xl  inset-0 absolute"
+                  className="mix-blend-multiply w-[488px] md:h-[340px] xs:h-[240px] drop-shadow-xl  inset-0 absolute"
                 />
                 <div
                   className="bg-about2 w-full inset-0 relative object-cover -translate-x-8 translate-y-8 h-[308px] mix-blend-color-burn bg-opacity-45 overflow-hidden brightness-90"
@@ -222,27 +225,27 @@ export function Apropos() {
                 </div>
               </div>
             
-            <div className="mr-28 w-1/2  flex flex-col">
-              <h2 className="text-6xl text-shadow-sm  font-semibold text-primary">
-                L'Avantage d'Alcoen
+            <div className="xl:mr-28 lg:mr-24  z-10 w-1/2 xs:w-5/12   flex flex-col">
+              <h2 className="xl:text-6xl lg:text-5xl  xs:text-2xl xs:text-wrap md:text-4xl md:text-nowrap font-semibold text-primary">
+                Notre Mission
               </h2>
-              <p className="text-4xl leading-relaxed   text-shadow-sm text-primary my-8">
+              <p className="lg:text-3.5xl xl:text-4xl leading-relaxed md:text-2.5xl md:leading-normal xs:text-xs   text-shadow-sm text-primary md:my-8 xs:my-2">
                 Progresser vers le succès avec expertise inégalée et un engagement constant.
               </p>
             </div>
           </div>
-          <div className='col-start-2 m-10 mr-20 col-span-11 flex  '>
-            <div className=' w-1/2 mb-10'>
-              <img src={aboutP3} alt="img" className='translate-x-5 w-full shadow-sm drop-shadow-2xl shadow-black' />
+          <div className='lg:col-start-2    lg:m-10 lg:ml-10 lg:mr-20 md:mr-2 lg:col-span-11 md:col-span-full xs:col-span-full flex  '>
+            <div className=' xl:w-2/3 lg:w-2/3  xs:h-full xs:w-8/12   md:w-[370px] xs:flex xs:items-center md:h-[400px] lg:h-auto xs:order-last md:order-1  mb-10'>
+              <img src={aboutP3} alt="img" className='lg:translate-x-0 md:translate-x-16 xs:-translate-x-4   w-full shadow-sm drop-shadow-2xl shadow-black' />
             </div> 
-            <div className='flex flex-col w-2/3 gap-y-6  items-start  -translate-x-16  z-10 mr-10 '>
-            <h2 className="text-5xl  text-shadow-sm font-semibold text-secondary">
+            <div className='flex flex-col  md:order-last xs:order-1 xl:w-8/12 md:w-1/2 lg:w-2/3 xs:w-7/12 lg:gap-y-6 md:gap-y-2 xs:gap-y-2  items-start lg:-translate-x-24  md:-translate-x-16 xs:translate-x-10  z-10  '>
+            <h2 className="xl:text-5xl lg:text-4xl md:text-3.5xl xs:text-2xl xs:text-nowrap font-semibold text-secondary">
             Portés par <span className='text-primary'>l'Ambition</span>
               </h2>
-              <p className='text-3xl text-shadow-sm text-secondary '>
+              <p className='lg:text-3xl md:text-2xl xs:text-1.4xl  text-secondary '>
               Révélant Notre Motivation et Nos Objectifs
               </p>
-              <p className='text-secondary pt-8 leading-loose text-shadow-sm'> 
+              <p className='text-secondary xl:pt-8 md:text-xs xs:text-xxs md:leading-relaxed md:mb-10 lg:text-base  lg:pt-0 leading-loose lg:leading-normal xl:leading-loose'> 
               Chez Alcoen, nous sommes animés par une ambition sans limites. Notre quête incessante d'innovation et de performance se conjugue harmonieusement avec un attachement profond à nos traditions et à l'excellence. Convaincus que l'union de l'expérience éprouvée et de la créativité émergente génère des solutions sur mesure, adaptées aux besoins spécifiques de chaque projet, nous nous engageons pleinement dans cette démarche unique.
               Rejoignez-nous dans cette aventure passionnante, où votre réussite est placée au cœur de nos préoccupations. Découvrez l'expertise inégalée d'Alcoen et notre engagement inébranlable envers nos clients et institutions. Nous sommes fiers de vous accompagner dans votre développement et de contribuer à l'épanouissement de vos projets les plus ambitieux.
               Bienvenue dans l'univers d'Alcoen, où l'avenir se construit avec passion et dévouement, où chaque étape est guidée par l'audace et l'aspiration à l'excellence

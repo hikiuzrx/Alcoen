@@ -1,11 +1,11 @@
 export default function AT(){
      return(<>
      <div className="grid grid-cols-12">
-          <section className="col-start-2 my-10 ml-10 col-span-10">
-               <h2 className="text-primary font-semibold leading-normal mb-10 text-5xl">
+          <section className="col-start-2 my-10 md:ml-10 xs:ml-4 col-span-10">
+               <h2 className="text-primary font-semibold leading-normal mb-10 xs:text-3.5xl xs:text-nowrap md:text-5xl">
                     Assistance technique
                </h2>
-               <p className="text-lg text-black leading-relaxed mb-10 mr-10 pr-5 ">
+               <p className="md:text-lg xs:text-s text-black leading-relaxed mb-10 md:mr-10 xs:mr-4  pr-5 ">
                Vous avez un projet technique complexe et vous cherchez un partenaire de confiance pour vous
                 accompagner ? Faites appel à notre service d’assistance technique aux clients. Nous mettons à
                  votre disposition des experts techniques qualifiés et expérimentés qui vous conseillent et vous 

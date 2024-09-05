@@ -122,7 +122,7 @@ let sendEmail = async ({ request  }:any) => {
      emailData.sCopy? console.log(emailData.sCopy):console.log('empty copy')
      emailData.uClient? console.log(emailData.uClient):console.log('empty update')     
      try {
-          const response = await fetch('http://localhost:3000/', {
+          const response = await fetch('https://hiki-mail-service-1.onrender.com/', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',

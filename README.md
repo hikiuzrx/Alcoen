@@ -8,4 +8,5 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
  The website needs some server configuration because it's hosted and APACHE Server through C-Panel so there is routing issue because it's using REACT ROUTER DOM which is used for client side routing so when the a user request for a certain route we get 404 status not found error 

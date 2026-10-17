@@ -4,6 +4,7 @@ import { Footer } from "../components/Footer";
 import logo from '../assets/logo1.jpg';
 import Menu from '../assets/menu-icon.svg';
 import close from '../assets/close.svg'
+import { applySeo } from '../seo'
 
 const links = [
   { to: '/a-propos', label: 'A Propos' },
@@ -11,14 +12,6 @@ const links = [
   { to: '/secteur', label: 'Secteur' },
   { to: '/contact', label: 'Contact' },
 ];
-
-const BASE_TITLE = "Alcoen | Assurer l'avenir, inspirer l'excellence";
-const pageTitles: Record<string, string> = {
-  '/a-propos': 'À propos',
-  '/service': 'Services',
-  '/secteur': 'Secteurs',
-  '/contact': 'Contact',
-};
 
 function RouteNavLayout() {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
@@ -28,8 +21,7 @@ function RouteNavLayout() {
   useEffect(() => {
     setMenuOpen(false);
     window.scrollTo(0, 0);
-    const section = pageTitles[pathname.replace(/\/+$/, '')] ?? (pathname.startsWith('/service/') ? 'Services' : null);
-    document.title = section ? `${section} | Alcoen` : BASE_TITLE;
+    applySeo(pathname);
   }, [pathname]);
 
   const linkClasses = ({ isActive }: { isActive: boolean }) =>
@@ -52,7 +44,7 @@ function RouteNavLayout() {
           <div className="md:hidden block">
             <button
               onClick={() => setMenuOpen(true)}
-              className="text-primary focus:outline-none mr-2 p-3"
+              className="text-primary focus:outline-hidden mr-2 p-3"
               aria-label="Ouvrir le menu"
               aria-expanded={menuOpen}
             >
@@ -80,7 +72,7 @@ function RouteNavLayout() {
           aria-hidden={!menuOpen}
         >
           <button
-            className="text-primary bg-white p-2 outline-none"
+            className="text-primary bg-white p-2 outline-hidden"
             onClick={() => setMenuOpen(false)}
             aria-label="Fermer le menu"
           >
@@ -96,7 +88,7 @@ function RouteNavLayout() {
         </div>
       </header>
 
-      <main className="mt-16 pt-5 flex-grow">
+      <main className="mt-16 pt-5 grow">
         <Outlet />
       </main>
       <Footer />

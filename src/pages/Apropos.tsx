@@ -1,10 +1,9 @@
 import { useState, useEffect } from 'react';
-import vector from '../assets/Vector.png';
-import aboutP1 from '../assets/About-page1.png';
-import aboutP2 from "../assets/about-page2.png";
-import aboutP3 from '../assets/about-page3.png'
+import vector from '../assets/Vector.webp';
+import aboutP1 from '../assets/About-page1.webp';
+import aboutP2 from "../assets/about-page2.webp";
+import aboutP3 from '../assets/about-page3.webp'
 import PageHeader from '../components/PageHeader';
-export function Apropos() {
   type RadioElement = {
     id: number;
     header: string;
@@ -15,7 +14,7 @@ export function Apropos() {
     id: number;
     active: boolean;
   };
-  const Header ={part1:' À PROPOS',part2:" D'ALCOEN"}
+
   const radioElements: RadioElement[] = [
     {
       id: 0,
@@ -37,6 +36,9 @@ export function Apropos() {
     },
   ];
 
+
+export function Apropos() {
+  const Header ={part1:' À PROPOS',part2:" D'ALCOEN"}
   const [radioState, setRadioState] = useState<RadioState[]>([
     { id: 0, active: true },
     { id: 1, active: false },
@@ -82,7 +84,7 @@ export function Apropos() {
           <div className="col-span-full col-start-2 md:mb-10 xs:ml-3 xs:mr-1 flex">
             <div className=" flex-col py-2">
               <div className="">
-              <img src={vector} alt="vector" className=" w-1/2 items-center object-contain my-10 translate-y-8 pb-10 mb-4 float-right" />
+              <img loading="lazy" src={vector} alt="vector" className=" w-1/2 items-center object-contain my-10 translate-y-8 pb-10 mb-4 float-right" />
                 <span className="text-secondary xs:pr-2 pt-10 break-normal md:text-base xs:text-xs leading-relaxed">
                   ALCOEN (Algerian Office of Consulting & Engineering) brille au cœur de divers
                   secteurs, tels que l'Énergie, le Pétrole, la Pétrochimie, l'Industrie,
@@ -199,7 +201,7 @@ export function Apropos() {
             </div>
             <div className="w-full h-full flex justify-start py-16 lg:items-center xs:justify-center  ">
               <div className="bg-primary xs:translate-y-40 md:translate-y-0 my-10 xl:ml-10 xs:-ml-4  lg:ml-4 md:ml-1 bg-cover size-fit ">
-                <img src={aboutP1} alt="img" className="xl:-translate-x-5 lg:-translate-x-3 md:-translate-x-2 md:translate-y-2 xs:-translate-x-2 xs:translate-y-2 xs:h-[210px] md:h-auto lg:translate-y-3  xl:translate-y-5" />
+                <img loading="lazy" src={aboutP1} alt="img" className="xl:-translate-x-5 lg:-translate-x-3 md:-translate-x-2 md:translate-y-2 xs:-translate-x-2 xs:translate-y-2 xs:h-[210px] md:h-auto lg:translate-y-3  xl:translate-y-5" />
               </div>
             </div>
           
@@ -236,7 +238,7 @@ export function Apropos() {
           </div>
           <div className='lg:col-start-2    lg:m-10 lg:ml-10 lg:mr-20 md:mr-2 lg:col-span-11 md:col-span-full xs:col-span-full flex  '>
             <div className=' xl:w-2/3 lg:w-2/3  xs:h-full xs:w-8/12   md:w-[370px] xs:flex xs:items-center md:h-[400px] lg:h-auto xs:order-last md:order-1  mb-10'>
-              <img src={aboutP3} alt="img" className='lg:translate-x-0 md:translate-x-16 xs:-translate-x-4   w-full shadow-sm drop-shadow-2xl shadow-black' />
+              <img loading="lazy" src={aboutP3} alt="img" className='lg:translate-x-0 md:translate-x-16 xs:-translate-x-4   w-full shadow-sm drop-shadow-2xl shadow-black' />
             </div> 
             <div className='flex flex-col  md:order-last xs:order-1 xl:w-8/12 md:w-1/2 lg:w-2/3 xs:w-7/12 lg:gap-y-6 md:gap-y-2 xs:gap-y-2  items-start lg:-translate-x-24  md:-translate-x-16 xs:translate-x-10  z-10  '>
             <h2 className="xl:text-5xl lg:text-4xl md:text-3.5xl xs:text-2xl xs:text-nowrap font-semibold text-secondary">

@@ -47,21 +47,21 @@ export default function IMAE(){
                </h2>
                <ul className="md:ml-10 xs:ml-0 mr-5 px-4 ">
                     <li className="text-black leading-relaxed flex relative  items-center my-5 mt-5  gap-x-2 md:text-lg xs:text-s  ">
-                         <img src={listIcone} alt="icone" className='top-3 absolute' />
+                         <img loading="lazy" src={listIcone} alt="" className='top-3 absolute' />
                          <p className='px-8 md:pr-8 xs:pr-4 pt-2'>
                               Vérification de la conformité aux spécifications définies, telles que la quantité, la taille, le poids, la couleur, marquage, les matériaux, les performances techniques,
                               etc. Elle permet de s'assurer que les produits répondent aux critères convenus.
                          </p>
                     </li>
                     <li className="text-black leading-relaxed relative  md:text-lg xs:text-s flex items-center my-5  gap-x-2">
-                    <img src={listIcone} alt="icone" className='top-3 absolute' />     
+                    <img loading="lazy" src={listIcone} alt="" className='top-3 absolute' />     
                     <p className='px-8 md:pr-8 xs:pr-4 pt-2'>
                          Détection des défauts et des non-conformités qui pourraient affecter la qualité, l'intégrité ou la fonctionnalité des marchandises. Cela peut inclure des problèmes tels
                          que des fissures, des rayures, des pièces manquantes, des erreurs d'impression, des anomalies de fonctionnement, etc.
                     </p>
                     </li>
                     <li className="text-black relative  leading-relaxed md:text-lg xs:text-s flex items-center my-5 gap-x-2">
-                    <img src={listIcone} alt="icone" className='top-3 absolute'  />
+                    <img loading="lazy" src={listIcone} alt="" className='top-3 absolute'  />
                    
                     <p className='px-8 xs:pr-4 md:pr-8 pt-2'>
                          Évaluation l’adéquation de l'emballage et l'étiquetage des marchandises pour assurer leur protection pendant le transport et s'il est conforme aux réglementations en

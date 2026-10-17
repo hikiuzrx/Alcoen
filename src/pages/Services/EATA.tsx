@@ -42,20 +42,20 @@ export default function EATA(){
                </h2>
                <ul className="md:ml-10 xs:ml-0 md:mr-5  xs:mr-4 px-4 ">
                     <li className="text-black leading-relaxed flex relative  items-center my-5 mt-5  gap-x-2 md:text-lg xs:text-s  ">
-                         <img src={listIcone} alt="icone" className='top-3 absolute' />
+                         <img loading="lazy" src={listIcone} alt="" className='top-3 absolute' />
                          <p className='px-8 md:pr-8 xs:pr-4 pt-2'>
                          Vérifier la conformité réglementaire des installations aux directives et normes.
 
                          </p>
                     </li>
                     <li className="text-black leading-relaxed relative  md:text-lg xs:text-s flex items-center my-5  gap-x-2">
-                    <img src={listIcone} alt="icone" className='top-3 absolute' />     
+                    <img loading="lazy" src={listIcone} alt="" className='top-3 absolute' />     
                     <p className='px-8 md:pr-8 xs:pr-4 pt-2'>
                          Identifier les zones à risque d'explosion et évaluer les dangers potentiels (Personnel, équipements et l'environnement.
                     </p>
                     </li>
                     <li className="text-black relative  leading-relaxed md:text-lg xs:text-s flex items-center my-5 gap-x-2">
-                    <img src={listIcone} alt="icone" className='top-3 absolute'  />
+                    <img loading="lazy" src={listIcone} alt="" className='top-3 absolute'  />
                    
                     <p className='px-8 md:pr-8 xs:pr-4 pt-2'>
                         Évaluation l'efficacité des mesures de prévention et de protection en place, comme l'utilisation de matériel antidéflagrant, la ventilation appropriée, les systèmes de contrôle
@@ -64,33 +64,33 @@ export default function EATA(){
 
                     </li>  
                     <li className="text-black leading-relaxed md:text-lg xs:text-s relative  flex items-center my-5 gap-x-2">
-                    <img src={listIcone} alt="icone" className='absolute top-3' />
+                    <img loading="lazy" src={listIcone} alt="" className='absolute top-3' />
                     <p className='px-8 md:pr-8 xs:pr-4 pt-2'>
                     Examiner les procédures opérationnelles, les pratiques de travail et les formations fournies aux employés.
                     </p>
                     </li>  
                     <li className="text-black leading-relaxed relative  md:text-lg xs:text-s flex items-center my-5 gap-x-2">
-                    <img src={listIcone} alt="icone" className='absolute top-3' />
+                    <img loading="lazy" src={listIcone} alt="" className='absolute top-3' />
                     <p className='px-8 md:pr-8 xs:pr-4 pt-2'>
                     Vérification de la documentation (certificats de conformité, les rapports d'inspection, les procédures de maintenance) est correctement tenue à jour et disponible pour les organismes de réglementation.
                     </p>
                     </li> 
                     <li className="text-black leading-relaxed relative  md:text-lg xs:text-s flex items-center my-5 gap-x-2">
-                    <img src={listIcone} alt="icone" className='absolute top-3' />
+                    <img loading="lazy" src={listIcone} alt="" className='absolute top-3' />
                     <p className='px-8 md:pr-8 xs:pr-4 pt-2'>
                          Identification des améliorations : Identifier les domaines où des améliorations peuvent être apportées en termes de sécurité, de maintenance ou de formation pour réduire
                          davantage les risques d'explosion.
                     </p>
                     </li>
                     <li className="text-black leading-relaxed relative  md:text-lg xs:text-s flex items-center my-5 gap-x-2">
-                    <img src={listIcone} alt="icone" className='absolute top-3' />
+                    <img loading="lazy" src={listIcone} alt="" className='absolute top-3' />
                     <p className='px-8 md:pr-8 xs:pr-4 pt-2'>
                          Prévention des accidents : Réduire le risque d'accidents graves, d'incendies et d'explosions qui pourraient entraîner des blessures pour les travailleurs, des dommages
                          matériels importants et des arrêts de production.
                     </p>
                     </li>  
                     <li className="text-black leading-relaxed relative  md:text-lg xs:text-s flex items-center my-5 gap-x-2">
-                    <img src={listIcone} alt="icone" className='absolute top-3' />
+                    <img loading="lazy" src={listIcone} alt="" className='absolute top-3' />
                     <p className='px-8 md:pr-8 xs:pr-4 pt-2'>
                     Amélioration continue : Fournir des informations pour l'amélioration continue des mesures de sécurité et de prévention dans l'installationATEX, assurant ainsi une gestion
                     proactive des risques. 

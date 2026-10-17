@@ -20,16 +20,16 @@ Que ce soit pour une inspection régulière, un suivi technique ou une évaluati
                </h2>
                <ul className="md:ml-10 xs:ml-4 md:mr-5  xs:mr-4 px-4 ">
                     <li className="text-black leading-relaxed flex relative items-center mt-5 mb-2 gap-x-2 md:text-lg xs:text-s   ">
-                         <img src={listIcone} alt="icone" className='top-3 absolute' />
+                         <img loading="lazy" src={listIcone} alt="" className='top-3 absolute' />
                          <p className='px-8 md:pr-8 xs:pr-4 pt-2'>Sécurité: Evalue les politiques, les procédures de sécurité. Cela comprend l'examen des pratiques de prévention des accidents, formation du personnel, la gestion des situations d'urgence et de sécurité incendie.
                          </p>
                     </li>
                     <li className="text-black leading-relaxed relative md:text-lg xs:text-s  flex items-center mb-2  gap-x-2">
-                    <img src={listIcone} alt="icone" className='top-3 absolute' />     
+                    <img loading="lazy" src={listIcone} alt="" className='top-3 absolute' />     
                     <p className='px-8 md:pr-8 xs:pr-4 pt-2'>Conformité réglementaire : Cela peut inclure les réglementations sur la santé, la sécurité, l'environnement, l'exploitation des ressources naturelles, etc.</p>
                     </li>
                     <li className="text-black relative leading-relaxed md:text-lg xs:text-s  flex items-center mb-2 gap-x-2">
-                    <img src={listIcone} alt="icone" className='top-3 absolute'  />
+                    <img loading="lazy" src={listIcone} alt="" className='top-3 absolute'  />
                    
                     <p className='px-8 md:pr-8 xs:pr-4 pt-2'>
                          L'audit examine l'état de l'équipement de forage, y compris les plates-formes de forage, 
@@ -38,7 +38,7 @@ Que ce soit pour une inspection régulière, un suivi technique ou une évaluati
 
                     </li>  
                     <li className="text-black leading-relaxed md:text-lg xs:text-s  relative flex items-center mb-2 gap-x-2">
-                    <img src={listIcone} alt="icone" className='absolute top-3' />
+                    <img loading="lazy" src={listIcone} alt="" className='absolute top-3' />
                     <p className='px-8 md:pr-8 xs:pr-4 pt-2'>
                     Gestion risques: Identifie et évalue les risques potentiels associés aux opérations de forage. Cela comprend l'analyse des procédures, des plans d'intervention
                     d'urgence et des mesures de prévention des incidents.
@@ -46,14 +46,14 @@ Que ce soit pour une inspection régulière, un suivi technique ou une évaluati
                     </p>
                     </li>  
                     <li className="text-black leading-relaxed relative md:text-lg xs:text-s  flex items-center mb-2 gap-x-2">
-                    <img src={listIcone} alt="icone" className='absolute top-3' />
+                    <img loading="lazy" src={listIcone} alt="" className='absolute top-3' />
                     <p className='px-8 md:pr-8 xs:pr-4 pt-2'>
                     Performances opérationnelles : Evaluation des performances générales de la station de forage RIG, y compris la productivité, l'efficacité des opérations, la gestion
                     des coûts, la gestion des stocks et la conformité aux objectifs de production
                     </p>
                     </li> 
                     <li className="text-black leading-relaxed relative md:text-lg xs:text-s  flex items-center my-10 gap-x-2">
-                    <img src={listIcone} alt="icone" className='absolute top-3' />
+                    <img loading="lazy" src={listIcone} alt="" className='absolute top-3' />
                     <p className='px-8 md:pr-8 xs:pr-4 pt-2'>
                          Une fois l'audit réalisé, un rapport détaillé est généralement produit, mettant en évidence les domaines de conformité et d'amélioration (Action trackerATK), ainsi
                          que les recommandations spécifiques pour remédier aux problèmes identifiés. Ces recommandations peuvent concerner des ajustements de procédures, des

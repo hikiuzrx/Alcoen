@@ -43,7 +43,7 @@ export function Footer() {
       <ul className="flex flex-col items-start  xl:w-3/12 xs:w-1/3    gap-2 xs:ml-6 md:ml-10 s:ml-2  ">
         <li className="xl:text-4xl lg:text-3xl font-semibold md:text-2.5xl xs:text-1.4xl md:mb-4 xs:mb-2 xs:text-start "><h3>Adresse</h3></li>
         <li className="xl:text-lg md:text-base xs:text-xs ">
-          <span className='text-wrap'>Address Cité Mohamed Boudiaf EPLF Bt5, 4 El Marsa Ex Jen Bart BP2, Alger; Algerie</span>
+          <span className='text-wrap'>Cité Mohamed Boudiaf EPLF Bt5, 4 El Marsa Ex Jen Bart BP2, Alger; Algerie</span>
         </li>
         <li className="xl:text-4xl lg:text-3xl md:text-2.5xl xs:text-1.4xl  font-semibold my-4"><h3>Téléphone</h3></li>
         <li className="xl:text-lg lg:text-base xs:text-xs xs:text-nowrap">+213 (0) 661 570 030</li>
@@ -55,7 +55,7 @@ export function Footer() {
       
       <div className="flex   lg:justify-center  xs:-pr-10    items-center md:w-3/12 xs:w-1/2 ">
         <NavLink to="/">
-          <img className="bg-transparent xl:w-60 lg:w-56" src={logo} alt="Logo" />
+          <img loading="lazy" className="bg-transparent xl:w-60 lg:w-56" src={logo} alt="Logo" />
         </NavLink>
       </div>
     </footer>

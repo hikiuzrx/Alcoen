@@ -1,13 +1,14 @@
 import { useState, useEffect } from "react";
 
+const arr: string[] = ['FIA', 'BLE', 'RÉU', 'SSI'];
+
 export function DynamicText() {
-  const arr: string[] = ['FIA', 'BLE', 'RÉU', 'SSI'];
   const [span1, setSpan1] = useState(' ');
   const [span2, setSpan2] = useState(' ');
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    let timeoutId: any;
+    let timeoutId: ReturnType<typeof setTimeout>;
 
     const sequence = [
      () => setSpan1(arr[index]),           // Step 1

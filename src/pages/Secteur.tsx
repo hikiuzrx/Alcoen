@@ -74,7 +74,7 @@ export function Secteur(){
                 <NavLink className='text-primary flex   w-full justify-start my-4 ' to={'/service'}>
               <div className='flex justify-start items-center'>
                 <span className='text-primary inline-block'>Voir les services  </span>
-                <img src={triangle} alt="icon" className='inline-block fill-primary  w-5 h-auto'/>
+                <img loading="lazy" src={triangle} alt="" className='inline-block fill-primary  w-5 h-auto'/>
               </div>
             </NavLink>
             </p>
@@ -82,7 +82,7 @@ export function Secteur(){
           </div>
         </div>
        </section>
-       <section className=" my-10 bg-[url('../../public/Secteur-bg.png')] bg-cover bg-no-repeat grid grid-cols-12">
+       <section className=" my-10 bg-[url('/Secteur-bg.webp')] bg-cover bg-no-repeat grid grid-cols-12">
           <div className="md:col-start-2 lg:col-start-2 lg:m-10 md:ml-16 lg:ml-10 md:m-10 xs:my-10 xs:ml-3 col-span-8 my-10 ">
             <h2 className="text-primary lg:text-6xl md:text-5xl xs:ml-10 lg:ml-10 xl:ml-0 xl:mb-4 xs:text-2xl">
               <span className="text-white font-semibold">ALCOEN </span>Portfolio
@@ -196,87 +196,87 @@ export function Secteur(){
           </div>
           <div className="col-start-3 col-span-8 grid lg:grid-cols-6 lg:grid-rows-6 xs:grid-cols-4 gap-3  my-7 ">
             <div className="bg-gray-200 drop-shadow-md rounded-xl  text-other  flex justify-center items-center">
-              <img src={sontarak} alt="sonatrak" />
+              <img loading="lazy" src={sontarak} alt="sonatrak" />
             </div>
             <div className="bg-gray-200 drop-shadow-md rounded-xl text-other flex justify-center items-center" >
-              <img src={hilos} alt="helios" />
+              <img loading="lazy" src={hilos} alt="helios" />
             </div>
             <div className="bg-gray-200 drop-shadow-md rounded-xl text-other flex justify-center items-center">
-              <img src={beakine} alt="beakine" />
+              <img loading="lazy" src={beakine} alt="beakine" />
             </div>
             <div className="bg-gray-200 drop-shadow-md rounded-xl text-other flex justify-center items-center">
-              <img src={helison} alt="helison" />
+              <img loading="lazy" src={helison} alt="helison" />
             </div>
             <div className="bg-gray-200 drop-shadow-md rounded-xl text-other flex justify-center items-center">
-              <img src={lafarge} alt="lafrage" />
+              <img loading="lazy" src={lafarge} alt="lafrage" />
             </div>
             <div className="bg-gray-200 drop-shadow-md rounded-xl text-other flex justify-center items-center">
-              <img src={linde} alt="linde" />
+              <img loading="lazy" src={linde} alt="linde" />
             </div>
             <div className="bg-gray-200 drop-shadow-md rounded-xl text-other flex justify-center items-center">
-              <img src={saipem} alt="saipem" />
+              <img loading="lazy" src={saipem} alt="saipem" />
             </div>
             <div className="bg-gray-200 drop-shadow-md rounded-xl text-other flex justify-center items-center">
-              <img src={naftal} alt="naftal" />
+              <img loading="lazy" src={naftal} alt="naftal" />
             </div>
             <div className="bg-gray-200 drop-shadow-md rounded-xl text-other flex justify-center items-center">
-              <img src={enafor} alt="enafor" />
+              <img loading="lazy" src={enafor} alt="enafor" />
             </div>
             <div className="bg-gray-200 drop-shadow-md rounded-xl text-other flex justify-center items-center">
-              <img src={touatGaz} alt="touatgaz" />
+              <img loading="lazy" src={touatGaz} alt="touatgaz" />
             </div>
             <div className="bg-gray-200 drop-shadow-md rounded-xl text-other flex justify-center items-center">
-              <img src={fertial} alt="fertial" />
+              <img loading="lazy" src={fertial} alt="fertial" />
             </div>
             <div className="bg-gray-200 drop-shadow-md rounded-xl text-other flex justify-center items-center">
-              <img src={cobra} alt="cobra" />
+              <img loading="lazy" src={cobra} alt="cobra" />
             </div>
             <div className=" bg-gray-200 drop-shadow-md  flex items-center rounded-lg overflow-hidden">
-              <img src={somiz} alt="somiz" />
+              <img loading="lazy" src={somiz} alt="somiz" />
             </div>
             <div className="bg-gray-200 drop-shadow-md xs:h-[43.8px] md:h-[97.5px] lg:h-[131px] rounded-xl text-other flex justify-center items-center">
-              <img src={smoik} alt="somik" />
+              <img loading="lazy" src={smoik} alt="somik" />
             </div>
             <div className="bg-gray-200 drop-shadow-md rounded-xl md:h-auto xs:h-[43.8px]  text-other flex justify-center items-center">
-              <img src={psp} alt="psp" />
+              <img loading="lazy" src={psp} alt="psp" />
             </div>
             <div className="bg-gray-200 drop-shadow-md rounded-xl md:h-auto xs:h-[43.8px] text-other flex justify-center items-center">
-              <img src={sbs} alt="sbs" />
+              <img loading="lazy" src={sbs} alt="sbs" />
             </div>
             <div className="bg-gray-200 drop-shadow-md rounded-xl md:h-auto xs:h-[43.8px] text-other flex justify-center items-center">
-              <img src={entp} alt="entp" />
+              <img loading="lazy" src={entp} alt="entp" />
             </div>
             <div className="bg-gray-200 drop-shadow-md rounded-xl xs:h-[43.8px] md:h-[97.5px] lg:h-[131px] text-other flex justify-center items-center">
-              <img src={bt} alt="bt" />
+              <img loading="lazy" src={bt} alt="bt" />
             </div>
             <div className="bg-gray-200 drop-shadow-md xs:h-[43.8px] md:h-auto rounded-xl overflow-hidden py-5">
-            <img src={def} alt="def" /></div>
+            <img loading="lazy" src={def} alt="def" /></div>
             <div className="bg-gray-200 drop-shadow-md rounded-xl text-other flex justify-center items-center">
-              <img src={sorf} alt="sorfert" className="object-fill" />
+              <img loading="lazy" src={sorf} alt="sorfert" className="object-fill" />
             </div>
             <div className="bg-gray-200 drop-shadow-md rounded-xl text-other flex justify-center items-center">
-              <img src={tosa} alt="tosa" />
+              <img loading="lazy" src={tosa} alt="tosa" />
             </div>
             <div className="bg-gray-200 drop-shadow-md rounded-xl text-other flex justify-center items-center">
-              <img src={sc} alt="sc" />
+              <img loading="lazy" src={sc} alt="sc" />
             </div>
             <div className="bg-gray-200 drop-shadow-md rounded-xl xs:h-[43.8px] md:h-[97px] lg:h-[131px] text-other flex justify-center items-center">
-              <img src={ig} alt="ig" />
+              <img loading="lazy" src={ig} alt="ig" />
             </div>
             <div className="bg-gray-200 drop-shadow-md rounded-xl  text-other flex justify-center items-center">
-              <img src={dp} alt="dp world" />
+              <img loading="lazy" src={dp} alt="dp world" />
             </div>
            
             <div className="flex justify-center gap-3 lg:col-span-full lg:h-[131px] md:h-[97.5px] xs:h-[43.8px] xs:px-6 md:px-12 lg:px-auto  xs:col-span-full">
               
               <div className="bg-gray-200 drop-shadow-md rounded-xl p-2 overflow-hidden  text-other flex justify-center items-center">
-              <img src={ourch} alt="" />
+              <img loading="lazy" src={ourch} alt="" />
               </div>
                <div className="bg-gray-200 drop-shadow-md  rounded-xl text-other flex justify-center items-center">
-              <img src={grn} alt="grn" />
+              <img loading="lazy" src={grn} alt="grn" />
             </div>
             <div className="bg-gray-200 drop-shadow-md rounded-xl text-other flex justify-center items-center">
-              <img src={gsa} alt="gsa" />
+              <img loading="lazy" src={gsa} alt="gsa" />
             </div>
             </div>
 

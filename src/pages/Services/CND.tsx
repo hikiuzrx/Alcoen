@@ -52,32 +52,32 @@ export default function CND(){
                </h2>
                <ul className="md:ml-10 xs:ml-0 mr-5 p-4 ">
                     <li className="text-black leading-relaxed flex items-center relative my-5 gap-x-2 md:text-lg  xs:text-s ">
-                         <img src={listIcone} alt="icone" className='absolute top-3' />
+                         <img loading="lazy" src={listIcone} alt="" className='absolute top-3' />
                          <p className='px-8 md:pr-8 xs:pr-4 pt-2'>
                          Contrôle Non Destructifs conventionnel: Visual testing (VT); Ressuage (PT);Magnétique (MT); Mesure d’épaisseur par ultrason (ME); contrôle de défaut
                          par ultrason, y compris corrosion mapping
                          </p>
                     </li>
                     <li className="text-black relative  leading-relaxed md:text-lg xs:text-s flex items-center my-5 gap-x-2">
-                    <img src={listIcone} alt="icone" className='absolute top-3' />     
+                    <img loading="lazy" src={listIcone} alt="" className='absolute top-3' />     
                     <p className='px-8 md:pr-8 xs:pr-4 pt-2'>
                          Contrôle Non Destructifs avancé, tels que PhasedArray Ultrasonics (PAUT), Le TOFD (Time-of-Flight Diffraction)
                     </p>
                     </li>
                     <li className="text-black leading-relaxed md:text-lg xs:text-s flex items-center relative my-5 gap-x-2">
-                    <img src={listIcone} alt="icone" className='absolute top-3'  />
+                    <img loading="lazy" src={listIcone} alt="" className='absolute top-3'  />
                     <p className='px-8 md:pr-8 xs:pr-4 pt-2'>
                          PMI (Positive Matériel Identification)
                     </p>
                     </li>  
                     <li className="text-black relative  leading-relaxed xs:text-s md:text-lg flex items-center my-5 gap-x-2">
-                    <img src={listIcone} alt="icone" className='absolute top-3' />
+                    <img loading="lazy" src={listIcone} alt="" className='absolute top-3' />
                     <p className='px-8 md:pr-8 xs:pr-4 pt-2'>
                          Dureté.
                     </p>
                     </li>  
                     <li className="text-black leading-relaxed  relative xs:text-s md:text-lg flex items-center my-10 gap-x-2">
-                    <img src={listIcone} alt="icone" className='absolute top-3' />
+                    <img loading="lazy" src={listIcone} alt="" className='absolute top-3' />
                     <p className='px-8 md:pr-8 xs:pr-4 pt-2'>
                          Réplique métallographique
                     </p>

@@ -24,7 +24,7 @@ export default function EAER(){
                </h2>
                <ul className="md:ml-10 xs:ml-4 mr-5 px-4 ">
                     <li className="text-black leading-relaxed flex relative  items-center my-5 mt-5  gap-x-2 md:text-lg xs:text-s  ">
-                         <img src={listIcone} alt="icone" className='top-3 absolute' />
+                         <img loading="lazy" src={listIcone} alt="" className='top-3 absolute' />
                          <p className='px-8 md:pr-8 xs:pr-4 pt-2'>
                               Expertise des réformes qui devrait $être conditionner par les exigences contractuelles et la décision du client pour réformer certain de ses biens (équipements, bâtiment, matériel
                               roulant...etc. et ce en tenant compte de la durée de vie, nombre et cout des pannes, réparation...etc.
@@ -32,14 +32,14 @@ export default function EAER(){
                          </p>
                     </li>
                     <li className="text-black leading-relaxed relative  md:text-lg xs:text-s flex items-center my-5  gap-x-2">
-                    <img src={listIcone} alt="icone" className='top-3 absolute' />     
+                    <img loading="lazy" src={listIcone} alt="" className='top-3 absolute' />     
                     <p className='px-8 md:pr-8 xs:pr-4 pt-2'>
                          Évaluation des sinistres en cas des dommages subis par l'assuré suite à un sinistre. Cela peut inclure les dommages matériels, les blessures corporelles ou toute autre perte
                          couverte par le contrat d'assurance.
                     </p>
                     </li>
                     <li className="text-black relative  leading-relaxed md:text-lg xs:text-s flex items-center my-5 gap-x-2">
-                    <img src={listIcone} alt="icone" className='top-3 absolute'  />
+                    <img loading="lazy" src={listIcone} alt="" className='top-3 absolute'  />
                    
                     <p className='px-8 md:pr-8 xs:pr-4 pt-2'>
                     Enquête sur l'incident pour déterminer la cause du sinistre et s'assurer que les dommages sont bien couverts par la police d'assurance.
@@ -47,40 +47,40 @@ export default function EAER(){
 
                     </li>
                     <li className="text-black relative  leading-relaxed md:text-lg xs:text-s flex items-center my-5 gap-x-2">
-                         <img src={listIcone} alt="icone" className='top-3 absolute'  />
+                         <img loading="lazy" src={listIcone} alt="" className='top-3 absolute'  />
                          <p className='px-8  xs:pr-4 md:pr-4 pt-2'>
                               Collecte de preuves nécessaires, telles que des photographies, des rapports de police ou des témoignages de témoins, pour étayer son évaluation des dommages.
                          </p>
 
                     </li>
                     <li className="text-black relative  leading-relaxed md:text-lg xs:text-s flex items-center my-5 gap-x-2">
-                         <img src={listIcone} alt="icone" className='top-3 absolute'  />
+                         <img loading="lazy" src={listIcone} alt="" className='top-3 absolute'  />
                          <p className='px-8 md:pr-8 xs:pr-4 pt-2'>
                               Estimation des coûts de réparation : Sur la base de son évaluation, l'expert doit estimer les coûts de réparation ou de remplacement des biens endommagés.
                          </p>
                     </li>
                     <li className="text-black relative  leading-relaxed md:text-lg xs:text-s flex items-center my-5 gap-x-2">
-                         <img src={listIcone} alt="icone" className='top-3 absolute'  />
+                         <img loading="lazy" src={listIcone} alt="" className='top-3 absolute'  />
                          <p className='px-8 md:pr-8 xs:pr-4 pt-2'>
                          Rapport d'expertise : L'expert d'assurance doit rédiger un rapport détaillé de son évaluation et de ses conclusions, qui sera ensuite transmis à la compagnie d'assurance pour
                          prendre des décisions sur l'indemnisation.
                          </p>
                     </li>
                     <li className="text-black relative  leading-relaxed md:text-lg xs:text-s flex items-center my-5 gap-x-2">
-                         <img src={listIcone} alt="icone" className='top-3 absolute'  />
+                         <img loading="lazy" src={listIcone} alt="" className='top-3 absolute'  />
                          <p className='px-8 md:pr-8 xs:pr-4 pt-2'>
                               Arbitrage : Dans le cas où il y a des désaccords entre l'assuré et la compagnie d'assurance sur l'évaluation des dommages, l'expert peut être appelé à jouer un rôle d'arbitre
                               neutre pour résoudre le différend.
                          </p>
                     </li>
                     <li className="text-black relative  leading-relaxed md:text-lg xs:text-s flex items-center my-5 gap-x-2">
-                         <img src={listIcone} alt="icone" className='top-3 absolute'  />
+                         <img loading="lazy" src={listIcone} alt="" className='top-3 absolute'  />
                          <p className='px-8 md:pr-8 xs:pr-4 pt-2'>
                               Suivi des dossiers : L'expert peut être amené à suivre les dossiers de sinistres et à apporter des ajustements ou des compléments à son évaluation initiale si nécessaire.
                          </p>
                     </li>
                     <li className="text-black relative  leading-relaxed md:text-lg xs:text-s flex items-center my-5 gap-x-2">
-                         <img src={listIcone} alt="icone" className='top-3 absolute'  />
+                         <img loading="lazy" src={listIcone} alt="" className='top-3 absolute'  />
                          <p className='px-8 md:pr-8 xs:pr-4 pt-2'>
                               Respect des réglementations : L'expert d'assurance doit se conformer aux réglementations établies par l'UAAR et suivre les procédures et les normes définies par l'organisme.
                          </p>

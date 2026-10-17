@@ -52,7 +52,7 @@ export default function CREIE(){
                </h2>
                <ul className="md:ml-10 xs:ml-0 mr-5 px-4 ">
                     <li className="text-black leading-relaxed flex relative  items-center my-5 mt-5  gap-x-2 md:text-lg xs:text-s  ">
-                         <img src={listIcone} alt="icone" className='top-3 absolute' />
+                         <img loading="lazy" src={listIcone} alt="" className='top-3 absolute' />
                          <p className='px-8 md:pr-8 xs:pr-4  pt-2'>
                               Vérification périodique des installations et les appareils électriques
                               conformément aux normes techniques nationales et internationales en
@@ -60,20 +60,20 @@ export default function CREIE(){
                          </p>
                     </li>
                     <li className="text-black leading-relaxed relative xs:text-s  md:text-lg flex items-center my-5  gap-x-2">
-                    <img src={listIcone} alt="icone" className='top-3 absolute' />     
+                    <img loading="lazy" src={listIcone} alt="" className='top-3 absolute' />     
                     <p className='px-8 md:pr-8 xs:pr-4 pt-2'>
                          Vérification des schémas électriques et des plans de câblage.
                     </p>
                     </li>
                     <li className="text-black relative  leading-relaxed md:text-lg xs:text-s flex items-center my-5 gap-x-2">
-                         <img src={listIcone} alt="icone" className='top-3 absolute'  />
+                         <img loading="lazy" src={listIcone} alt="" className='top-3 absolute'  />
                          <p className='px-8 md:pr-8 xs:pr-4 pt-2'>
                               Contrôle des dispositifs de protection tels que les disjoncteurs, les
                               interrupteurs différentiels, les fusibles, etc.
                          </p>
                     </li>  
                     <li className='text-black relative leading-relaxed md:text-lg xs:text-s flex items-center my-5 gap-x-2'>
-                         <img src={listIcone} alt="icone" className='absolute top-3' />
+                         <img loading="lazy" src={listIcone} alt="" className='absolute top-3' />
                          <p className='px-8 md:pr-8 xs:pr-4 pt-2'>
                          Mesure des paramètres électriques tels que la tension, courant, résistance
                          de terre, etc.
@@ -81,7 +81,7 @@ export default function CREIE(){
                     </li>
    
                     <li className='text-black relative leading-relaxed md:text-lg xs:text-s flex items-center my-5 gap-x-2'>
-                         <img src={listIcone} alt="icone" className='absolute top-3' />
+                         <img loading="lazy" src={listIcone} alt="" className='absolute top-3' />
                          <p className='px-8 md:pr-8 xs:pr-4 pt-2'>
                               Evaluation des risques électriques pour identifier les dangers potentiels et
                               proposer des mesures d'atténuation appropriées, ainsi que la sensibilisation

@@ -2,7 +2,7 @@ import img from '../assets/Sans titre - 1_Plan de travail 1 1.png'
 import DynamicText from '../components/DynamicText'
 import { NavLink } from 'react-router-dom'
 import triangle from '../assets/triangle-icone.svg'
-import homeSection from '../assets/home-section.jpg'
+import homeSection from '../assets/home-section.webp'
 import  Slider  from '../components/Slider'
 import  HomeCard  from '../components/HomeCard'
 
@@ -12,11 +12,11 @@ export function Home(){
      return (
           <>
                <section className='relative top-0 mt-3 mb-10'>
-               <div className="bg-[url('../../public/home-page.jpg')] max-xl:bg-cover lg:bg-cover bg-no-repeat relative ">
+               <div className="bg-[url('/home-page.webp')] max-xl:bg-cover lg:bg-cover bg-no-repeat relative ">
                <div className='flex  relative '>
                     <div className='flex justify-center items-start flex-col  w-10/12  '>
                          <h1 className='text-secondary my-6 md:ml-10 xs:ml-4 font-normal  lg:ml-20 pl-5 md:mb-0 xs:mb-1 mb-2 lg:text-5xl xl:text-6xl md:text-4xl  xs:pl-2 xs:text-2xl '>Solutions d'Ingénierie</h1>
-                         <h1 className='text-secondary my-6 md:ml-10 xs:ml-4 font-normal lg:ml-20 pl-5 mt-2 lg:text-5xl xl:text-6xl md:text-4xl xs:pl-2 xs:text-2xl'> Pour un Avenir</h1>
+                         <p className='text-secondary my-6 md:ml-10 xs:ml-4 font-normal lg:ml-20 pl-5 mt-2 lg:text-5xl xl:text-6xl md:text-4xl xs:pl-2 xs:text-2xl'> Pour un Avenir</p>
                          
                         <div className='flex justify-between'>
                         <DynamicText/>
@@ -35,7 +35,7 @@ export function Home(){
                               <NavLink className='text-primary flex justify-start m-2 ' to={'/service'}>
                                    <div className='flex justify-start lg:text-sm xs:text-xs items-center'>
                                         <span className='text-primary inline-block'>Voir les services  </span>
-                                        <img src={triangle} alt="icon" className='inline-block fill-primary w-5  xl:w-5 lg:w-4 h-auto'/>
+                                        <img src={triangle} alt="" className='inline-block fill-primary w-5  xl:w-5 lg:w-4 h-auto'/>
                                    </div>
                               </NavLink>
                             
@@ -55,7 +55,7 @@ export function Home(){
                     <div className='col-span-2 w-full bg-gradient-to-b from-transparent to-white  h-14'></div>
                </div>
           </section>
-          <section className="bg-gradient-to-t from-[url('../../public/home-page.jpg)] to-white ">
+          <section className="bg-gradient-to-t from-transparent to-white ">
                <div className='grid grid-cols-8 lg:ml-24 pl-4 xs:ml-16 '>
                     <div className='md:col-span-2 xs:col-span-full xs:gap-x-2 flex md:flex-col  justify-start items-start lg:ml-14  xl:ml-24 md:ml-10 '>
                          <h2 className='text-secondary xl:text-5xl lg:text-4xl xl:text-4.5xl md:text-3xl xl:mb-4 font-medium md:mb-2  mt-2 md:pr-0  pr-20 lg:pr-0 mb-4 lg:mb-1 xs:pr-0 xs:text-2.5xl '>Qui est</h2>
@@ -69,7 +69,7 @@ export function Home(){
                          <NavLink to={'/a-propos'} className={"flex justify-start items-center"} >
                          <div className='flex justify-start items-center'>
                                         <span className='text-primary inline-block text-lg font-medium'>Voir les services  </span>
-                                        <img src={triangle} alt="icon" className='inline-block fill-primary  w-7 h-auto'/>
+                                        <img src={triangle} alt="" className='inline-block fill-primary  w-7 h-auto'/>
                                    </div>
                          </NavLink>
                          </span>

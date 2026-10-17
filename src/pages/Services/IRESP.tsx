@@ -21,41 +21,41 @@ export default function IRESP(){
                </h2>
                <ul className="md:ml-10 xs:ml-0 mr-5 p-4 ">
                     <li className="text-black leading-relaxed flex items-center gap-x-2 md:text-lg xs:text-s relative my-5  ">
-                         <img src={listIcone} alt="icone" className='absolute top-3' />
+                         <img loading="lazy" src={listIcone} alt="" className='absolute top-3' />
                          <p className='md:px-8 xs:pl-8 xs:pr-3 md:pr-8 pt-2'>Inspections régulières et périodiques des ESP, y compris la vérification des dossiers techniques, la  vérification des caractéristiques techniques conformément aux normes de sécurité et aux exigences réglementaires</p>
                     </li>
                     <li className="text-black leading-relaxed relative  md:text-lg xs:text-s flex items-center my-5 gap-x-2">
-                    <img src={listIcone} alt="icone" className='absolute top-3' />     
+                    <img loading="lazy" src={listIcone} alt="" className='absolute top-3' />     
                     <p className='px-8 md:pr-8 xs:pr-4  pt-2'>
                     Assister et valider des essais et épreuves pour vérifier la résistance et l'intégrité des ESP..
                     </p>
 
                     </li>
                     <li className="text-black leading-relaxed relative md:text-lg xs:text-s flex items-center my-5 gap-x-2">
-                    <img src={listIcone} alt="icone" className='absolute top-3'  />
+                    <img loading="lazy" src={listIcone} alt="" className='absolute top-3'  />
                          <p className='px-8 md:pr-8 xs:pr-4 pt-2'> Contrôle des dispositifs de sécurité, tels que les soupapes de sécurité, les manomètres, les limiteurs de pression…etc.</p>
 
                     </li>  
                     <li className="text-black leading-relaxed relative md:text-lg xs:text-s flex items-center my-5 gap-x-2">
-                    <img src={listIcone} alt="icone" className='absolute top-3' />
+                    <img loading="lazy" src={listIcone} alt="" className='absolute top-3' />
                          <p className='px-8 md:pr-8 xs:pr-4 pt-2'> 
                          Évaluation des risques en service et hors service
                          </p>
                     </li>  
                     <li className="text-black leading-relaxed relative md:text-lg xs:text-s flex items-center my-5 gap-x-2">
-                    <img src={listIcone} alt="icone" className='absolute top-3' />
+                    <img loading="lazy" src={listIcone} alt="" className='absolute top-3' />
                          <p className='px-8 md:pr-8 xs:pr-4 pt-2'>
                          Mise en conformité des installations
                          </p>
                     </li> 
                     <li className="text-black leading-relaxed md:text-lg xs:text-s relative flex items-center my-5 gap-x-2">
-                    <img src={listIcone} alt="icone" className='absolute top-3' />
+                    <img loading="lazy" src={listIcone} alt="" className='absolute top-3' />
                          <p className='px-8 md:pr-8 xs:pr-4 pt-2'>
                          Expertise pour dérogation d’épreuve hydrostatique
                          </p>
                     </li>  
                     <li className="text-black leading-relaxed relative md:text-lg xs:text-s flex items-center my-5 gap-x-2">
-                    <img src={listIcone} alt="icone" className='top-3 absolute' />
+                    <img loading="lazy" src={listIcone} alt="" className='top-3 absolute' />
                          <p className='px-8 md:pr-8 xs:pr-4 pt-2'>
                          Algérianisation des ESP avec ou sans le dossier technique
                          </p>

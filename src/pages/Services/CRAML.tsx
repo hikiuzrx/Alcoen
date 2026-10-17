@@ -25,7 +25,7 @@ export default function CRAML(){
                </h2>
                <ul className="md:ml-10 xs:ml-0 md:mr-5  xs:mr-4 px-4 ">
                     <li className="text-black leading-relaxed flex relative  items-center my-5 mt-5  gap-x-2 md:text-lg xs:text-s  ">
-                         <img src={listIcone} alt="icone" className='top-3 absolute' />
+                         <img loading="lazy" src={listIcone} alt="" className='top-3 absolute' />
                          <p className='px-8 md:pr-8 xs:pr-4 pt-2'>
                               Vérifier l’état général, et la conformité desAPL aux normes techniques,
                               ainsi que leur fonctionnement sécurisé, y compris la vérification du
@@ -34,13 +34,13 @@ export default function CRAML(){
                          </p>
                     </li>
                     <li className="text-black leading-relaxed relative  md:text-lg xs:text-s flex items-center my-5  gap-x-2">
-                    <img src={listIcone} alt="icone" className='top-3 absolute' />     
+                    <img loading="lazy" src={listIcone} alt="" className='top-3 absolute' />     
                     <p className='px-8 md:pr-8 xs:pr-4 pt-2'>
                     Essais et vérifications fonctionnelles sans et avec charge.
                     </p>
                     </li>
                     <li className="text-black relative  leading-relaxed md:text-lg xs:text-s flex items-center my-5 gap-x-2">
-                    <img src={listIcone} alt="icone" className='top-3 absolute'  />
+                    <img loading="lazy" src={listIcone} alt="" className='top-3 absolute'  />
                    
                     <p className='px-8 md:pr-8 xs:pr-4 pt-2'>
                          Assister aux épreuves statique/dynamique pour évaluer la capacité de
@@ -49,21 +49,21 @@ export default function CRAML(){
 
                     </li>  
                     <li className="text-black leading-relaxed md:text-lg xs:text-s relative  flex items-center my-5 gap-x-2">
-                    <img src={listIcone} alt="icone" className='absolute top-3' />
+                    <img loading="lazy" src={listIcone} alt="" className='absolute top-3' />
                     <p className='px-8 md:pr-8 xs:pr-4 pt-2'>
                               Contrôler et vérifier les dispositifs de sécurité, tels que les limiteurs de
                               charge, course, les freins, les dispositifs de verrouillage, etc. 
                     </p>
                     </li>  
                     <li className="text-black leading-relaxed relative  md:text-lg xs:text-s flex items-center my-5 gap-x-2">
-                    <img src={listIcone} alt="icone" className='absolute top-3' />
+                    <img loading="lazy" src={listIcone} alt="" className='absolute top-3' />
                     <p className='px-8 md:pr-8 xs:pr-4 pt-2'>
                          Vérification l’adéquation desAPL, évaluation des risques ainsi que la
                          sensibilisation du personnel.
                     </p>
                     </li> 
                     <li className="text-black leading-relaxed relative  md:text-lg xs:text-s flex items-center my-5 gap-x-2">
-                    <img src={listIcone} alt="icone" className='absolute top-3' />
+                    <img loading="lazy" src={listIcone} alt="" className='absolute top-3' />
                     <p className='px-8 md:pr-8 xs:pr-4 pt-2'>
                          Renseigner le registre de sécurité les anomalies les plus pertinante pour
                          y remédiation urgente de la part du Client

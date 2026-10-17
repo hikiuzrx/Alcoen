@@ -1,9 +1,7 @@
 import PageHeader from "../components/PageHeader"
 import { Form, useActionData, useNavigation } from "react-router-dom"
 import type { ContactResult } from "./contactAction"
-import "../styles/checkBox.css"
 import sns from '../assets/Contact/social media.svg'
-import map from '../assets/Contact/contact-map.webp'
 import logo from "../assets/Contact/big logo.png"
 import logow from '../assets/logo svg.svg'
 import { useEffect, useRef } from "react"
@@ -24,42 +22,43 @@ export function  Contact(){
           <>
           <div className="relative top-20 mb-10">
                <PageHeader Header={Header}/>
-               <section className=" max-h-[1002px] overflow-hidden my-10 bg-[url('/Contact1.webp')] bg-cover bg-no-repeat flex justify-center">
-                    <div className="p-4 bg-white rounded-xl my-10 lg:w-1/3 md:w-1/2 xs:w-2/3">
-                         <Form ref={formRef} method="post" action="" className="grid grid-cols-2 gap-2 text-other md:text-base xs:text-xs ">
-                              <input required type="text" placeholder="Nom de l'entreprise" aria-label="Nom de l'entreprise" autoComplete="organization" name="Entreprise" className="col-span-2 rounded-xl bg-white border-2 border-gray-500 p-2" />
-                              <input required type="text" placeholder="Nom" aria-label="Nom" autoComplete="family-name" name="lastName" className="bg-white rounded-xl col-span-1 border-2 border-gray-500 p-2" />
-                              <input required type="text" placeholder="Prénom" aria-label="Prénom" autoComplete="given-name" name="firstName" className="bg-white rounded-xl col-span-1 border-2 border-gray-500 p-2"/>
-                              <input required type="email" placeholder="E-mail" aria-label="E-mail" autoComplete="email" name="email" className="bg-white rounded-xl border-2 border-gray-500 col-span-2 p-2" />
-                              <input required type="tel" placeholder="Téléphone" aria-label="Téléphone" autoComplete="tel" name="phoneNumber" className="bg-white rounded-xl border-2 border-gray-500 col-span-1 p-2" />
-                              <input required type="text" placeholder="Pays" aria-label="Pays" autoComplete="country-name" name="country" className="bg-white rounded-xl border-2 border-gray-500 col-span-1 p-2" />
-                              <textarea name="message" required className="w-full md:h-64 xs:h-48 p-4 md:text-lg xs:text-xs leading-6 border-2 border-gray-500 resize-none overflow-hidden col-span-2 bg-white text-other rounded-xl break-words whitespace-pre-wrap" placeholder="Votre message..." aria-label="Votre message"></textarea>
-                              <div className="col-span-2 flex gap-3 mt-2">
-                              <input type="checkbox" id="uClient" name="uClient" className="w-8 h-5 
-                              mt-0.5   border-2 opacity-35  after:border-gray-500 rounded-md checked:opacity-100 accent-primary forced-color-adjust-none peer-checked:border-other" />
-                              <label htmlFor="uClient" className="text-other md:text-base xs:text-xs  ">Je souhaite être informé(e) des événements, actualités, produits et services <span className="font-semibold">d'ALCOEN</span> </label>
+               <section className="relative my-10 px-4 py-14 md:py-20 bg-[url('/Contact1.webp')] bg-cover bg-center bg-no-repeat">
+                    <div className="absolute inset-0 bg-other/60" aria-hidden="true" />
+                    <div className="relative mx-auto grid max-w-5xl overflow-hidden rounded-2xl bg-white shadow-2xl lg:grid-cols-5">
+                         <aside className="flex flex-col justify-between gap-8 bg-other p-8 text-white lg:col-span-2 md:p-10">
+                              <div>
+                                   <img loading="lazy" src={logow} alt="ALCOEN" className="w-40 brightness-0 invert" />
+                                   <h2 className="mt-8 text-2xl font-semibold md:text-3xl">Parlons de votre projet</h2>
+                                   <p className="mt-3 text-sm leading-relaxed text-white/75 md:text-base">Votre connexion vers des solutions expertes et fiables, à un clic de distance.</p>
                               </div>
-                              <div className="col-span-2 flex gap-4">
-                              <input type="checkbox" id="sCopy" name="sCopy" className="w-7 h-5 md:w-6 -ml-0.5 mt-0.5   border-2 opacity-35  after:border-gray-500 rounded-md checked:opacity-100 accent-primary forced-color-adjust-none peer-checked:border-other  " />
-                              <label htmlFor="sCopy" className="text-other md:text-base xs:text-xs ">Envoyez une copie de ce message à mon adresse e-mail. </label>
-                              </div>
-                              <div className="col-span-2 flex justify-center items-center">
-                                   <input type="submit" disabled={sending} className="p-4 md:px-8 xs:px-3 xs:py-2 xs:text-base border-2 bg-primary text-white font-semibold rounded-xl md:text-xl hover:bg-secondary active:bg-other" value={contact}  />
-                              </div>
-        
+                              <ul className="space-y-4 text-sm text-white/90">
+                                   <li><span className="block text-xs uppercase tracking-wider text-primary">Adresse</span>Rue Principale, Villa N° 96<br />El Marsa (ex Jean Bart), Alger</li>
+                                   <li><span className="block text-xs uppercase tracking-wider text-primary">Téléphone</span>+213 (0) 661 570 030</li>
+                              </ul>
+                         </aside>
+                         <Form ref={formRef} method="post" action="" className="grid grid-cols-2 gap-4 p-6 text-sm text-other md:p-10 md:text-base lg:col-span-3">
+                              <input required type="text" placeholder="Nom de l'entreprise" aria-label="Nom de l'entreprise" autoComplete="organization" name="Entreprise" className="col-span-2 w-full rounded-lg border border-gray-300 bg-gray-50 px-4 py-3 text-other placeholder:text-gray-400 transition focus:border-primary focus:bg-white focus:outline-none focus:ring-4 focus:ring-primary/15" />
+                              <input required type="text" placeholder="Nom" aria-label="Nom" autoComplete="family-name" name="lastName" className="col-span-2 sm:col-span-1 w-full rounded-lg border border-gray-300 bg-gray-50 px-4 py-3 text-other placeholder:text-gray-400 transition focus:border-primary focus:bg-white focus:outline-none focus:ring-4 focus:ring-primary/15" />
+                              <input required type="text" placeholder="Prénom" aria-label="Prénom" autoComplete="given-name" name="firstName" className="col-span-2 sm:col-span-1 w-full rounded-lg border border-gray-300 bg-gray-50 px-4 py-3 text-other placeholder:text-gray-400 transition focus:border-primary focus:bg-white focus:outline-none focus:ring-4 focus:ring-primary/15" />
+                              <input required type="email" placeholder="E-mail" aria-label="E-mail" autoComplete="email" name="email" className="col-span-2 w-full rounded-lg border border-gray-300 bg-gray-50 px-4 py-3 text-other placeholder:text-gray-400 transition focus:border-primary focus:bg-white focus:outline-none focus:ring-4 focus:ring-primary/15" />
+                              <input required type="tel" placeholder="Téléphone" aria-label="Téléphone" autoComplete="tel" name="phoneNumber" className="col-span-2 sm:col-span-1 w-full rounded-lg border border-gray-300 bg-gray-50 px-4 py-3 text-other placeholder:text-gray-400 transition focus:border-primary focus:bg-white focus:outline-none focus:ring-4 focus:ring-primary/15" />
+                              <input required type="text" placeholder="Pays" aria-label="Pays" autoComplete="country-name" name="country" className="col-span-2 sm:col-span-1 w-full rounded-lg border border-gray-300 bg-gray-50 px-4 py-3 text-other placeholder:text-gray-400 transition focus:border-primary focus:bg-white focus:outline-none focus:ring-4 focus:ring-primary/15" />
+                              <textarea name="message" required rows={5} placeholder="Votre message..." aria-label="Votre message" className="col-span-2 resize-none w-full rounded-lg border border-gray-300 bg-gray-50 px-4 py-3 text-other placeholder:text-gray-400 transition focus:border-primary focus:bg-white focus:outline-none focus:ring-4 focus:ring-primary/15"></textarea>
+                              <label htmlFor="uClient" className="col-span-2 flex cursor-pointer gap-3 text-sm text-secondary">
+                                   <input type="checkbox" id="uClient" name="uClient" className="mt-0.5 size-5 shrink-0 cursor-pointer accent-primary" />
+                                   <span>Je souhaite être informé(e) des événements, actualités, produits et services <span className="font-semibold">d'ALCOEN</span></span>
+                              </label>
+                              <label htmlFor="sCopy" className="col-span-2 flex cursor-pointer gap-3 text-sm text-secondary">
+                                   <input type="checkbox" id="sCopy" name="sCopy" className="mt-0.5 size-5 shrink-0 cursor-pointer accent-primary" />
+                                   <span>Envoyez une copie de ce message à mon adresse e-mail.</span>
+                              </label>
+                              <button type="submit" disabled={sending} className="col-span-2 mt-2 cursor-pointer rounded-lg border-none bg-primary px-8 py-3.5 text-base font-semibold text-white shadow-lg shadow-primary/30 transition hover:bg-secondary focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 active:bg-other disabled:cursor-not-allowed disabled:opacity-60 md:text-lg">{contact}</button>
                               <input type="text" name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" className="hidden" />
                               {result && !result.ok && (
-                                   <p role="alert" className="col-span-2 text-center text-primary font-medium">{result.error}</p>
+                                   <p role="alert" className="col-span-2 text-center font-medium text-primary">{result.error}</p>
                               )}
                          </Form>
-                
                     </div>
-                    <div className="flex flex-col justify-end mb-10 lg:mx-5 md:mx-2 lg:w-1/5 xs:w-1/4 md:w-4/12">
-                         <img loading="lazy" src={logow} alt="ALCOEN" className="max-w-[252px]" />
-                         <p className="text-center lg:text-base md:text-s lg:pr-4 md:pr-2 xs:text-xxs ">Votre connexion vers des solutions expertes et fiables, à un clic de distance.</p>
-                    </div>
-                   
-
                </section>
                <section className="my-14">
                     <h2 className="text-secondary text-center font-semibold lg:text-5xl xs:text-2.5xl md:text-4.5xl">
@@ -76,8 +75,8 @@ export function  Contact(){
                               <div className="md:w-1/4 xs:w-2/3 xs:ml-14 md:ml-0" >
                                    <h3 className="text-primary md:text-center xs:text-start md:ml-0 xs:ml-10 xl:-ml-6 font-semibold md:text-4xl xs:text-1.4xl">Adresse</h3>
                                    <p className="text-secondary md:pl-6 lg:pl-0 md:text-base lg:text-lg md:mt-7 xs:mt-3  xs:text-m leading-relaxed">
-                                   Cité Mohamed Boudiaf EPLF Bt5,
-                                   N° 4 El Marsa Ex Jen Bart BP2, Alger; Algerie
+                                   Rue Principale, Villa N° 96,
+                                   El Marsa Ex Jean Bart, Alger; Algérie
                                    </p>
                               </div>
                               <div className="md:w-1/4  xs:w-1/2 xs:ml-10">
@@ -95,8 +94,15 @@ export function  Contact(){
                     </div>
                </section>
                <section className="grid grid-cols-12 md:gap-y-10 xs:gap-y-2">
-                    <div className="col-start-3 col-span-8 overflow-hidden rounded-xl">
-                         <img loading="lazy" src={map} alt="Carte de localisation d'ALCOEN" className="rounded-xl" />
+                    <div className="col-start-2 col-span-10 md:col-start-3 md:col-span-8 overflow-hidden rounded-2xl shadow-lg">
+                         <iframe
+                              title="Carte de localisation d'ALCOEN à El Marsa, Alger"
+                              src="https://www.openstreetmap.org/export/embed.html?bbox=3.2356%2C36.8011%2C3.2756%2C36.8211&layer=mapnik&marker=36.8111%2C3.2556"
+                              loading="lazy"
+                              referrerPolicy="no-referrer"
+                              className="block h-80 w-full border-0 md:h-[28rem]"
+                         />
+                         <a href="https://www.openstreetmap.org/?mlat=36.8111&mlon=3.2556#map=15/36.8111/3.2556" target="_blank" rel="noopener noreferrer" className="block bg-other py-3 text-center text-sm font-medium text-white hover:text-primary">Ouvrir la carte en grand</a>
                     </div>
                     <div className="col-start-3 col-span-8 flex justify-center my-10 mb-20">
                          <img loading="lazy" src={logo} alt="" className="rounded-xl" />

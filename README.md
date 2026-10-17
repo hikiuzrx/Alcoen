@@ -1,12 +1,39 @@
-# ALCOEN's Business Website :
-It's a website developped for Alcoen to introduce the entreprise and it's services using :
-## React + React Router DOM +TypeScript + Vite
+# ALCOEN's Business Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Marketing website for ALCOEN (inspection, expertise and engineering services), built with
+React 18, React Router 6, TypeScript, Vite and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Getting started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+npm ci
+cp .env.example .env   # then adjust values
+npm run dev            # http://localhost:3000
+npm run lint
+npm run build          # output in dist/
+```
 
- The website needs some server configuration because it's hosted and APACHE Server through C-Panel so there is routing issue because it's using REACT ROUTER DOM which is used for client side routing so when the a user request for a certain route we get 404 status not found error 
+### Environment variables
+
+| Variable | Purpose |
+| --- | --- |
+| `VITE_MAIL_API_URL` | Endpoint (POST, JSON) that receives the contact form. Set it before building, since Vite inlines it at build time. While it is empty (mailing service not ready yet), the form shows visitors the phone numbers instead of sending. |
+
+## Project layout
+
+- `src/data/services.ts` - single source of truth for services (slug, title, header image). Routes, the home slider, the service header and redirects from legacy URLs are generated from it.
+- `src/pages/Services/*` - one page per service, lazy loaded in `src/App.tsx`.
+- `src/pages/contactAction.ts` - contact form action (timeout, error handling, honeypot).
+
+To add a service: add an entry to `services.ts`, create the page in `src/pages/Services/` and register it in the `pages` map in `src/App.tsx`.
+
+## Deployment (Apache / cPanel)
+
+The site is a client-side routed SPA, so the server must fall back to `index.html` for unknown paths.
+`public/.htaccess` does this and is copied into `dist/` by the build. Upload the whole content of `dist/`
+(including the hidden `.htaccess`) to the web root.
+
+## Notes
+
+- Images should be exported as WebP and sized for their display width.
+- The contact form depends on an external mail service. On free hosting tiers it can sleep, which makes the first request slow.

@@ -238,7 +238,7 @@ export function Apropos() {
           </div>
           <div className='lg:col-start-2    lg:m-10 lg:ml-10 lg:mr-20 md:mr-2 lg:col-span-11 md:col-span-full xs:col-span-full flex  '>
             <div className=' xl:w-2/3 lg:w-2/3  xs:h-full xs:w-8/12   md:w-[370px] xs:flex xs:items-center md:h-[400px] lg:h-auto xs:order-last md:order-1  mb-10'>
-              <img loading="lazy" src={aboutP3} alt="img" className='lg:translate-x-0 md:translate-x-16 xs:-translate-x-4   w-full shadow-sm drop-shadow-2xl shadow-black' />
+              <img loading="lazy" src={aboutP3} alt="img" className='lg:translate-x-0 md:translate-x-16 xs:-translate-x-4   w-full shadow-xs drop-shadow-2xl shadow-black' />
             </div> 
             <div className='flex flex-col  md:order-last xs:order-1 xl:w-8/12 md:w-1/2 lg:w-2/3 xs:w-7/12 lg:gap-y-6 md:gap-y-2 xs:gap-y-2  items-start lg:-translate-x-24  md:-translate-x-16 xs:translate-x-10  z-10  '>
             <h2 className="xl:text-5xl lg:text-4xl md:text-3.5xl xs:text-2xl xs:text-nowrap font-semibold text-secondary">

@@ -52,10 +52,10 @@ export function Home(){
                     </div>
                </div>
                    
-                    <div className='col-span-2 w-full bg-gradient-to-b from-transparent to-white  h-14'></div>
+                    <div className='col-span-2 w-full bg-linear-to-b from-transparent to-white  h-14'></div>
                </div>
           </section>
-          <section className="bg-gradient-to-t from-transparent to-white ">
+          <section className="bg-linear-to-t from-transparent to-white ">
                <div className='grid grid-cols-8 lg:ml-24 pl-4 xs:ml-16 '>
                     <div className='md:col-span-2 xs:col-span-full xs:gap-x-2 flex md:flex-col  justify-start items-start lg:ml-14  xl:ml-24 md:ml-10 '>
                          <h2 className='text-secondary xl:text-5xl lg:text-4xl xl:text-4.5xl md:text-3xl xl:mb-4 font-medium md:mb-2  mt-2 md:pr-0  pr-20 lg:pr-0 mb-4 lg:mb-1 xs:pr-0 xs:text-2.5xl '>Qui est</h2>

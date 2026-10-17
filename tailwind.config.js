@@ -23,19 +23,19 @@ export default {
         triangle: 'url("/src/assets/list-icone.svg")',
       },
       backgroundImage: _theme => ({
-        'IRESP': "url('../../public/services/IRESP.png')",
-        'IMAE': "url('../../public/services/IMAE.png')",
-        'CRAML': "url('../../public/services/CRAML.png')",
-        'CND': "url('../../public/services/CND.png')",
-        'RIGS': "url('../../public/services/RIGS.png')",
-        'EATA': "url('../../public/services/EATA.png')",
-        'CREIE': "url('../../public/services/CREIE.png')",
-        'AT': "url('../../public/services/AT.png')",
-        'EAER': "url('../../public/services/EAER.png')",
-        'MADDP': "url('../../public/services/MADDP.png')",
-        'FAPI': "url('../../public/services/FAPI.png')",
-        'FCND': "url('../../public/services/FCND.png')",
-        'FES': "url('../../public/services/FES.png')",
+        'IRESP': "url('/services/IRESP.webp')",
+        'IMAE': "url('/services/IMAE.webp')",
+        'CRAML': "url('/services/CRAML.webp')",
+        'CND': "url('/services/CND.webp')",
+        'RIGS': "url('/services/RIGS.webp')",
+        'EATA': "url('/services/EATA.webp')",
+        'CREIE': "url('/services/CREIE.webp')",
+        'AT': "url('/services/AT.webp')",
+        'EAER': "url('/services/EAER.webp')",
+        'MADDP': "url('/services/MADDP.webp')",
+        'FAPI': "url('/services/FAPI.webp')",
+        'FCND': "url('/services/FCND.webp')",
+        'FES': "url('/services/FES.webp')",
       }),
       textShadow: {
         'sm': '1px 1px 2px rgba(0, 0, 0, 0.5)',
@@ -46,7 +46,7 @@ export default {
         'none': 'none',
       },
       fontFamily: {
-        main: ["Poppins"],
+        main: ["Poppins", "system-ui", "sans-serif"],
       },
       colors: {
         primary: "#FA4516",
@@ -83,9 +83,6 @@ export default {
         "1.2xl":"1.33rem"
         
       },
-      backgroundImage:{
-        'home':"url('./src/assets/home-page.jpg)"
-      },
       width:{
         homeS:"385px",
         homeXs:"345px",
@@ -114,11 +111,6 @@ export default {
       }
       
 
-    },
-  },
-  variants: {
-    extend: {
-      textShadow: ['responsive', 'hover', 'focus'],
     },
   },
     plugins: [
@@ -169,10 +161,8 @@ export default {
           },
         },
         /* Scrollbar thumb on hover */
-        '.scrollbar-thumb:hover': {
-          '&::-webkit-scrollbar-thumb:hover': {
-            background: '#555',
-          },
+        '.scrollbar-thumb:hover::-webkit-scrollbar-thumb': {
+          background: '#555',
         },
       });
     },

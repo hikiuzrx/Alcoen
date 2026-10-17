@@ -1,10 +1,10 @@
 import { NavLink } from "react-router-dom"
 import PageHeader from "../components/PageHeader"
-import IRESP from '../assets/IRESP.jpg'
+import IRESP from '../assets/IRESP.webp'
 import AT from '../assets/AT.png'
-import CND from '../assets/serviceimg.png'
-import CRAML from '../assets/CRAML BIG.png'
-import CREIE from '../assets/BIG CERIE.png'
+import CND from '../assets/serviceimg.webp'
+import CRAML from '../assets/CRAML BIG.webp'
+import CREIE from '../assets/BIG CERIE.webp'
 import EAER from '../assets/EAER.png'
 import EEATA from '../assets/EEATA.png'
 import IMAE from '../assets/IMAE.png'
@@ -12,12 +12,12 @@ import RIGS from '../assets/RIGS.png'
 import MADDP from '../assets/maddp.png'
 import triangle from '../assets/triangle-slider.svg'
 import '../styles/gradiant1.css'
-import form1 from "../assets/Service/Formation1.png"
-import form2 from '../assets/Service/Formation2.png'
+import form1 from "../assets/Service/Formation1.webp"
+import form2 from '../assets/Service/Formation2.webp'
 import form3 from '../assets/Service/Formation3.png'
 
 export function Service(){
-     let Header = {part1:'NOS',part2:"SERVICES"}
+     const Header = {part1:'NOS',part2:"SERVICES"}
           return (<>
                <div className="relative mb-10 top-20 ">
                     <PageHeader Header={Header} />
@@ -29,9 +29,9 @@ export function Service(){
                     </p>
                     </div>
                     <div className="col-start-3 col-span-8 grid xs:grid-cols-2 md:grid-cols-3 md:gap-x-3 xs:gap-x-1 mb-10 xs:gap-y-2 xl:gap-y-8 md:gap-y-3 lg:gap-y-6">
-                        <NavLink to='Inspection-Réglementaire-ESP' className={"order-1"}>
+                        <NavLink to='/service/inspection-reglementaire-esp' className={"order-1"}>
                         <div className="relative overflow-hidden">
-                              <img src={IRESP} alt="irsp" className="w-full xl:h-[322px] xs:h-[128px] lg:h-[282px] md:h-[182px]  inset-0" />
+                              <img loading="lazy" src={IRESP} alt="irsp" className="w-full xl:h-[322px] xs:h-[128px] lg:h-[282px] md:h-[182px]  inset-0" />
                               <div className="bg-gradient-to-br    from-primary via-primary opacity-85  to-transparent   object-fill absolute  shadow-lg  inset-0"></div>
                               <div className="absolute inset-0 text-white xl:gap-y-10 lg:gap-y-5 p-3 flex flex-col  md:justify-around xs:justify-between ">
                                    <p className="xl:mr-4 xl:text-1.2xl lg:mr-2 leading-loose xl:px-4 lg:px-3 md:px-1 md:mb-4 md:pb-6  lg:pb-2 md:mr-1  xl:mb-4   font-semibold  md:text-s md:leading-tight  lg:text-lg xs:text-xs">
@@ -44,9 +44,9 @@ export function Service(){
 
                          </div>
                         </NavLink>
-                       <NavLink to='Contrôle-Non-Destructifs' className={"order-2"}>
+                       <NavLink to='/service/controle-non-destructifs' className={"order-2"}>
                        <div className="relative overflow-hidden">
-                              <img src={CND} alt="CND" className="w-full object-fill inset-0 xl:h-[322px] lg:h-[282px] md:h-[182px]  xs:h-[128px] " />
+                              <img loading="lazy" src={CND} alt="CND" className="w-full object-fill inset-0 xl:h-[322px] lg:h-[282px] md:h-[182px]  xs:h-[128px] " />
                               <div className="absolute inset-0 bg-slate-800 opacity-20"></div>
                               <div className="bg-gradient-to-tl from-primary via-transparent    to-secondary  object-fill absolute    shadow-lg  inset-0"></div>
   
@@ -60,9 +60,9 @@ export function Service(){
 
                          </div>
                          </NavLink>
-                         <NavLink to="RIG-service" className={"md:order-3 xs:order-6"}>
+                         <NavLink to="/service/rig-service" className={"md:order-3 xs:order-6"}>
                          <div className="relative overflow-hidden">
-                              <img src={RIGS} alt="RIGS" className="w-full inset-0  xl:h-[322px] lg:h-[282px] md:h-[182px]  xs:h-[128px] rounded-none" />
+                              <img loading="lazy" src={RIGS} alt="RIGS" className="w-full inset-0  xl:h-[322px] lg:h-[282px] md:h-[182px]  xs:h-[128px] rounded-none" />
                               <div className="bg-gradient-to-tr from-primary via-transparent to-other rounded-none absolute   inset-0 "></div>
                               <div className="absolute inset-0 text-white xl:gap-y-10 lg:gap-y-6 p-3 flex flex-col lg:justify-around md:justify-between xs:justify-between">
                                    <p className="leading-relaxed md:mb-4 md:pb-6  lg:mb-0 xl:mr-4 xl:pl-4 lg:mr-2 lg:pl-3 lg:pb-9 xl:pb-0  font-semibold xl:text-1.2xl md:text-s xs:text-xs lg:text-lg">
@@ -73,15 +73,15 @@ export function Service(){
 
                          </div>
                          </NavLink>
-                         <NavLink to="Contrôle-réglementaire-des-appareils-de-manutention-et-levage" className='w-full text-white hover:text-white xs:col-span-1 order-4 md:col-span-full'>
+                         <NavLink to="/service/controle-reglementaire-appareils-manutention-levage" className='w-full text-white hover:text-white xs:col-span-1 order-4 md:col-span-full'>
                          <div className="col-span-3 relative ">
-                              <img src={CRAML} alt="craml" className="xl:h-[322px] lg:h-[282px] md:h-[182px]  xs:h-[128px] w-full object cover" />
+                              <img loading="lazy" src={CRAML} alt="craml" className="xl:h-[322px] lg:h-[282px] md:h-[182px]  xs:h-[128px] w-full object cover" />
                               <div className="inset-0 absolute bg-gradient-to-r opacity-70 from-other via-other-100 to-transparent transition duration-300 ease-in-out md:hover:bg-gradient-to-r hover:from-primary hover:via-primary-200 hover:to-primary-200"></div>
     
                    
                               <div className="absolute inset-0 gradiant1 z-10 flex flex-col md:justify-around xs:justify-between md:p-5 xs:p-1 ">
                                    <span className="leading-relaxed  xl:mr-4 lg:mr-2 lg:leading-normal xl:pl-4 md:mb-4 md:pl-2  lg:pl-3 inline  font-semibold md:leading-tight md:text-lg xl:text-3xl lg:text-2.5xl xs:text-xs">
-                                   <p className="xs:inline md:block">Contrôle réglementaire des appareils </p>
+                                   <p className="xs:inline md:block">Contrôle réglementaire des appareils </p>
                                   <p className="xs:inline md:block "> de manutention et levage</p>
 
                                    </span>
@@ -89,18 +89,18 @@ export function Service(){
                                   
                               </div>
                               <div className="gradiant inset-0  absolute w-full  "></div>
-                              <img src={triangle} alt="triangle"  className="inset-0 absolute transition duration-1000 top-1/2 w-10 scale-0 hover:scale-100 right-0 "/>
+                              <img loading="lazy" src={triangle} alt="triangle"  className="inset-0 absolute transition duration-1000 top-1/2 w-10 scale-0 hover:scale-100 right-0 "/>
                          </div>
                          </NavLink>
                          
                          <div className="col-span-full flex md:gap-x-3 xs:gap-x-1  order-5">
-                           <NavLink to='Expertise-et-audit-type-ATEX' className="w-1/2 relative text-white hover:text-white">
+                           <NavLink to='/service/expertise-audit-atex' className="w-1/2 relative text-white hover:text-white">
                            
-                              <img src={EEATA} alt="eeta"  className="w-full  xl:h-[322px] lg:h-[282px] md:h-[182px]  xs:h-[128px] "/>
+                              <img loading="lazy" src={EEATA} alt="eeta"  className="w-full  xl:h-[322px] lg:h-[282px] md:h-[182px]  xs:h-[128px] "/>
                               <div className="inset-0 absolute bg-gradient-to-tl from-primary via-transparent to-other"></div>
                               <div className="absolute inset-0  z-10 flex flex-col md:justify-around xs:justify-between md:p-5 xs:p-3">
                                    <span className="leading-relaxed  lg:mr-4 md:mr-1 md:pl-2 md:mb-2 lg:pl-4 inline  font-semibold lg:text-2xl lg:leading-relaxed md:text-base xl:text-3xl xs:text-xs">
-                                   <p >Expertise et audit </p>
+                                   <p >Expertise et audit </p>
                                   <p> type ATEX</p>
 
                                    </span>
@@ -110,9 +110,9 @@ export function Service(){
 
                              
                            </NavLink>
-                            <NavLink to="Inspection-marchandises-avant-expédition" className="w-1/2 relative text-white hover:text-white">
+                            <NavLink to="/service/inspection-marchandises-avant-expedition" className="w-1/2 relative text-white hover:text-white">
                          
-                                   <img src={IMAE} alt="IMAE" className="w-full xl:h-[322px] lg:h-[282px] md:h-[182px]  xs:h-[128px]" />
+                                   <img loading="lazy" src={IMAE} alt="IMAE" className="w-full xl:h-[322px] lg:h-[282px] md:h-[182px]  xs:h-[128px]" />
                                    <div className="inset-0 absolute bg-gradient-to-t from-primary  via-secondary opacity-75 to-secondary">
                                    <div className="absolute inset-0  z-10 flex flex-col md:justify-around xs:justify-between md:p-5 xs:p-2 ">
                                    <span className="leading-relaxed  xl:mr-4 md:mr-1 lg:mr-2 xl:px-4 md:pl-2 md:leading-tight xs:mb-2 md:mb-4    inline  font-semibold xl:text-3xl lg:leading-relaxed md:text-base lg:text-2xl xs:text-xs">
@@ -129,8 +129,8 @@ export function Service(){
                             </NavLink>
 
                          </div>
-                         <NavLink to="Contrôle-réglementaire-des-équipement-&-installations-électriques" className="relative xs:col-span-1 md:col-span-full text-white md:order-6 xs:order-3  hover:text-white">
-                              <img src={CREIE} alt="creie" className=" xl:h-[322px] lg:h-[282px] md:h-[182px]  xs:h-[128px] w-full " />
+                         <NavLink to="/service/controle-reglementaire-equipements-installations-electriques" className="relative xs:col-span-1 md:col-span-full text-white md:order-6 xs:order-3  hover:text-white">
+                              <img loading="lazy" src={CREIE} alt="creie" className=" xl:h-[322px] lg:h-[282px] md:h-[182px]  xs:h-[128px] w-full " />
                               <div className="inset-0 absolute bg-primary-200"></div>
                               <div className="absolute inset-0 gradiant1 z-10 flex flex-col justify-around md:p-5 xs:p-1 ">
                                    <span className="leading-relaxed lg:leading-normal  md:mr-4  md:mb-4 lg:mb-0 md:px-4 inline xs:pl-1 md:pl-4  font-semibold md:text-lg xs:text-xs md:leading-tight lg:text-2.5xl xl:text-3xl">
@@ -144,8 +144,8 @@ export function Service(){
                                   
                               </div>
                          </NavLink>
-                         <NavLink to="Assistance-technique" className="text-white hover:text-white relative order-7 w-full">
-                              <img src={AT} alt="AT" className="w-full  xl:h-[322px] lg:h-[282px] md:h-[182px] xs:h-[102p xs:h-[128px]"/>
+                         <NavLink to="/service/assistance-technique" className="text-white hover:text-white relative order-7 w-full">
+                              <img loading="lazy" src={AT} alt="AT" className="w-full  xl:h-[322px] lg:h-[282px] md:h-[182px] xs:h-[102p xs:h-[128px]"/>
                               <div className="inset-0 absolute bg-gradient-to-tr  from-primary-100 via-other-100 to-other-100 opacity-70"></div>
                               <div className="absolute inset-0 text-white xl:gap-y-10 lg:gap-y-4 p-3 flex flex-col lg:justify-around md:justify-between  ">
                                    <span className="xl:mr-4 xl:mt-3 lg:mr-2 md:text-base  leading-loose xl:px-4 lg:pl-3 mb-4 md:pl-2 md:leading-tight  font-semibold xl:text-1.2xl xs:text-xs lg:leading-normal lg:text-lg">
@@ -159,8 +159,8 @@ export function Service(){
                             
                               
                          </NavLink>
-                         <NavLink to={'Expertise-assurance-et-réassurance'} className={"order-8"}>
-                         <div className="relative"><img src={EAER} alt="eaer" className="w-full xl:h-[322px] lg:h-[282px] md:h-[182px]  xs:h-[128px]" />
+                         <NavLink to={'/service/expertise-assurance-reassurance'} className={"order-8"}>
+                         <div className="relative"><img loading="lazy" src={EAER} alt="eaer" className="w-full xl:h-[322px] lg:h-[282px] md:h-[182px]  xs:h-[128px]" />
                               <div className="bg-gradient-to-tr from-primary via-transparent  to-secondary inset-0 absolute"></div>
                               <div className="absolute inset-0 text-white xl:gap-y-10 lg:gap-y-10 p-3 flex flex-col lg:justify-around md:justify-between xs:justify-between">
                                    <p className="xl:mr-4 lg:mr-2 xl:pt-0  md:text-base md:pl-0 lg:pt-2 xl:mt-0 lg:mt-custom-mr leading-loose xl:pl-4  md:text-s md:leading-tight lg:pl-3  md:mb-4 xs:mb-0 xs:leading-tight font-semibold xl:text-1.2xl lg:text-lg xs:text-xs">
@@ -171,9 +171,9 @@ export function Service(){
                               </div>
                          </div>
                          </NavLink>
-                       <NavLink to={'Mise-à-disposition-du-personnel'} className={"order-9"}>
+                       <NavLink to={'/service/mise-a-disposition-du-personnel'} className={"order-9"}>
                        <div className="relative">
-                              <img src={MADDP} alt="MADDP"  className="w-full xl:h-[322px] lg:h-[282px] md:h-[182px]  xs:h-[128px]"/>
+                              <img loading="lazy" src={MADDP} alt="MADDP"  className="w-full xl:h-[322px] lg:h-[282px] md:h-[182px]  xs:h-[128px]"/>
                               <div className="inset-0 absolute bg-gradient-to-tr  from-primary via-transparent to-secondary "></div>
                               <div className="absolute inset-0 text-white gap-y-10 p-3 flex flex-col lg:justify-evenly md:justify-between xs:justify-between ">
                                    <p className="xl:mr-4 lg:mr-2 md:mr-1 md:pl-1 md:text-s md:leading-tight xl:mt-0 lg:mt-2  leading-loose xl:pl-4 lg:pl-3 xs:mb-1 md:mb-4 font-semibold xl:text-1.2xl xs:text-xs lg:text-lg ">
@@ -193,9 +193,9 @@ export function Service(){
                          Nos formations chez ALCOEN vous offrent une opportunité unique de développer vos compétences professionnelles. Que ce soit pour renforcer vos connaissances techniques, vous familiariser avec les normes industrielles ou améliorer vos pratiques,  nos programmes sont conçus pour répondre à vos besoins spécifiques. Faites un pas vers l'excellence professionnelle avec ALCOEN et accédez à un savoir-faire de pointe pour réussir dans votre domaine.
                     </p>
                     <div className="col-start-3 col-span-8  gap-x-3 grid grid-cols-3 xs:gap-y-4  ">
-                 <NavLink to={'Formation-API-510-,-570,-,-579-,-653...etc.'} className={"md:col-span-1 xs:col-span-full"}>
+                 <NavLink to={'/service/formation-api'} className={"md:col-span-1 xs:col-span-full"}>
                  <div className="relative  overflow-hidden md:mb-10">
-                              <img src={form3} alt="API 510" className="w-full xl:h-[322px] lg:h-[282px] md:h-[182px] xs:h-[160px] inset-0" />
+                              <img loading="lazy" src={form3} alt="API 510" className="w-full xl:h-[322px] lg:h-[282px] md:h-[182px] xs:h-[160px] inset-0" />
                               <div className="bg-gradient-to-tr    from-primary-100 via-primary-200    to-other    object-fill absolute  shadow-lg  inset-0"></div>
                               <div className="absolute inset-0 text-white xl:gap-y-6 lg:gap-y-6 xs:gap-y-6  p-3 flex flex-col justify-between xl:h-[340px] md:h-[182px]  xs:h-[128px] lg:h-[282px]">
                                    <p className="xl:mr-4 lg:mr-2 lg:leading-relaxed xl:leading-loose xl:pl-4 lg:pl-3 lg:mb-4 md:pl-1 md:mr-1 xl:mb-0 md:leading-tight font-semibold lg:text-xl md:text-s xs:text-lg  xl:text-xl">
@@ -209,9 +209,9 @@ export function Service(){
 
                     </div>
                  </NavLink>
-                    <NavLink to={'Formation-CND-LI-&-LII-renouvellement-certificat'}className={'md:col-span-1 xs:col-span-full'}>
+                    <NavLink to={'/service/formation-cnd'}className={'md:col-span-1 xs:col-span-full'}>
                     <div className="relative col-span-1 overflow-hidden md:mb-10">
-                              <img src={form1} alt="API 510" className="w-full xl:h-[322px] lg:h-[282px] md:h-[182px] xs:h-[160px] inset-0" />
+                              <img loading="lazy" src={form1} alt="API 510" className="w-full xl:h-[322px] lg:h-[282px] md:h-[182px] xs:h-[160px] inset-0" />
                               <div className= "  bg-gradient-to-tr    from-transparent    via-other-100 to-other opacity-75 object-fill absolute  shadow-lg  inset-0"></div>
                               <div className="absolute inset-0 text-white xl:gap-y-6 lg:gap-y-6 xs:gap-y-6  lg:pb-6  xl:pb-0 md:gap-y-0 p-3 flex flex-col lg:justify-between md:justify-between xl:h-[340px] lg:h-[282px] md:h-[182px] ">
                                    <p className="xl:mr-4 leading-loose xl:mt-5 lg:mb-4   xl:pl-4 lg:pl-3 lg:text-xl lg:mr-2 md:mr-1 md:pl-1 xs:text-lg md:text-s md:leading-tight  font-semibold xl:text-xl">
@@ -225,9 +225,9 @@ export function Service(){
 
                     </div>
                     </NavLink>
-                  <NavLink to={'Formation-et-sensibilisation'} className={"md:col-span-1 xs:col-span-full"}>
+                  <NavLink to={'/service/formation-sensibilisation'} className={"md:col-span-1 xs:col-span-full"}>
                   <div className="relative col-span-1 overflow-hidden mb-10">
-                              <img src={form2} alt="API 510" className="w-full xl:h-[322px] lg:h-[282px] md:h-[182px] xs:h-[160px]  inset-0" />
+                              <img loading="lazy" src={form2} alt="API 510" className="w-full xl:h-[322px] lg:h-[282px] md:h-[182px] xs:h-[160px]  inset-0" />
                               <div className="bg-gradient-to-tr    from-primary      to-transparent   object-fill absolute  shadow-lg  inset-0"></div>
                               <div className="absolute inset-0 text-white gap-y-6 lg:gap-y-10 xs:gap-y-4 p-3 flex flex-col lg:justify-between md:justify-between xl:justify-between xl:h-[340px] lg:h-[282px] md:h-[182px] ">
                                    <p className="xl:mr-4 lg:leading-relaxed xl:leading-loose xl:pl-4 lg:pl-3 md:pl-1 md:mr-1 md:leading-tight lg:text-xl lg:mr-2 xs:text-lg font-semibold xl:text-xl md:text-s  ">

@@ -1,137 +1,105 @@
-import { NavLink, Outlet } from "react-router-dom";
-import { useState } from "react";
+import { NavLink, Outlet, useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
 import { Footer } from "../components/Footer";
 import logo from '../assets/logo1.jpg';
 import Menu from '../assets/menu-icon.svg';
 import close from '../assets/close.svg'
 
+const links = [
+  { to: '/a-propos', label: 'A Propos' },
+  { to: '/service', label: 'Service' },
+  { to: '/secteur', label: 'Secteur' },
+  { to: '/contact', label: 'Contact' },
+];
+
+const BASE_TITLE = "Alcoen | Assurer l'avenir, inspirer l'excellence";
+const pageTitles: Record<string, string> = {
+  '/a-propos': 'À propos',
+  '/service': 'Services',
+  '/secteur': 'Secteurs',
+  '/contact': 'Contact',
+};
+
 function RouteNavLayout() {
-  const [activeLink, setActiveLink] = useState<string | null>(null);
-  const [menuOpen, setMenuOpen] = useState<boolean>(false); // State for hamburger menu
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);
+  const { pathname } = useLocation();
 
-  const handleClick = (link: string) => {
-    setActiveLink(link);
-    setMenuOpen(false); // Close menu on link click
-  };
+  // Close the mobile menu and reset scroll on navigation
+  useEffect(() => {
+    setMenuOpen(false);
+    window.scrollTo(0, 0);
+    const section = pageTitles[pathname.replace(/\/+$/, '')] ?? (pathname.startsWith('/service/') ? 'Services' : null);
+    document.title = section ? `${section} | Alcoen` : BASE_TITLE;
+  }, [pathname]);
 
-  const getLinkClasses = (link: string) => {
-    return link === activeLink
-      ? 'm-4 text-primary lg:mt-7 md:mt-8 mb-5  relative group hover:text-primary'
-      : 'm-4 text-black lg:mt-7 md:mt-8 mb-5  hover:text-primary active:text-primary relative group';
-  };
+  const linkClasses = ({ isActive }: { isActive: boolean }) =>
+    `m-4 lg:mt-7 md:mt-8 mb-5 relative group hover:text-primary active:text-primary ${isActive ? 'text-primary' : 'text-black'}`;
 
-  const getUnderLineClass = (link: string) => {
-    return link === activeLink
-      ? "absolute left-0 top-full mt-7 w-full h-1 bg-primary scale-x-100 "
+  const underlineClasses = (isActive: boolean) =>
+    isActive
+      ? "absolute left-0 top-full mt-7 w-full h-1 bg-primary scale-x-100"
       : "absolute left-0 top-full mt-7 w-full h-1 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out";
-  };
 
   return (
-    <>   
+    <>
       <header className="bg-white fixed top-0 p-2 h-24 w-full border-b border-gray-300 z-50">
-        <nav className="flex justify-between items-center relative">
-          {/* Logo */}
+        <nav className="flex justify-between items-center relative" aria-label="Navigation principale">
           <div>
-            <NavLink to="/" onClick={() => handleClick('/')}>
-              <img src={logo} className="mt-2 inline-block" alt="Logo" />
+            <NavLink to="/">
+              <img src={logo} className="mt-2 inline-block" alt="ALCOEN - accueil" />
             </NavLink>
           </div>
-          {/* Hamburger Icon */}
           <div className="md:hidden block">
             <button
-              onClick={() => setMenuOpen(!menuOpen)}
+              onClick={() => setMenuOpen(true)}
               className="text-primary focus:outline-none mr-2 p-3"
+              aria-label="Ouvrir le menu"
+              aria-expanded={menuOpen}
             >
-           <img src={Menu} alt="menu btn" className="w-6 h-6" />
+              <img src={Menu} alt="" className="w-6 h-6" />
             </button>
           </div>
-          {/* Navigation Links */}
-          <div
-            className={`hidden md:flex items-center lg:text-lg md:text-base justify-evenly  w-1/2`}
-          >
-            <NavLink
-              to="a-propos"
-              className={`${getLinkClasses('/a-propos')} md:ml-0 md:mr-2`}
-              onClick={() => handleClick('/a-propos')}
-            >
-              A Propos
-              <div className={getUnderLineClass('/a-propos')}></div>
-            </NavLink>
-            <NavLink
-              to="service"
-              className={getLinkClasses('/service')}
-              onClick={() => handleClick('/service')}
-            >
-              Service
-              <div className={getUnderLineClass('/service')}></div>
-            </NavLink>
-            <NavLink
-              to="secteur"
-              className={getLinkClasses('/secteur')}
-              onClick={() => handleClick('/secteur')}
-            >
-              Secteur
-              <div className={getUnderLineClass('/secteur')}></div>
-            </NavLink>
-            <NavLink
-              to="contact"
-              className={getLinkClasses('/contact')}
-              onClick={() => handleClick('/contact')}
-            >
-              Contact
-              <div className={getUnderLineClass('/contact')}></div>
-            </NavLink>
+          <div className="hidden md:flex items-center lg:text-lg md:text-base justify-evenly w-1/2">
+            {links.map(({ to, label }, i) => (
+              <NavLink key={to} to={to} className={(s) => `${linkClasses(s)}${i === 0 ? ' md:ml-0 md:mr-2' : ''}`}>
+                {({ isActive }) => (
+                  <>
+                    {label}
+                    <div className={underlineClasses(isActive)}></div>
+                  </>
+                )}
+              </NavLink>
+            ))}
           </div>
         </nav>
-        {/* Overlay Menu */}
+        {/* Mobile overlay menu: hidden from tab order/screen readers while closed */}
         <div
           className={`fixed inset-y-0 right-0 w-2/3 bg-white shadow-lg z-50 p-5 transform transition-transform duration-300 ease-in-out ${
-            menuOpen ? 'translate-x-0' : 'translate-x-full'
+            menuOpen ? 'translate-x-0' : 'translate-x-full invisible'
           } md:hidden`}
+          aria-hidden={!menuOpen}
         >
           <button
-            className="text-primary bg-white p-2 outline-none "
-            onClick={() => setMenuOpen(!menuOpen)}
+            className="text-primary bg-white p-2 outline-none"
+            onClick={() => setMenuOpen(false)}
+            aria-label="Fermer le menu"
           >
-            <img src={close} alt="close btn" className="w-8  border-2 border-black rounded-lg bg-black h-8 " />
+            <img src={close} alt="" className="w-8 border-2 border-black rounded-lg bg-black h-8" />
           </button>
           <div className="flex flex-col items-start mt-16">
-            <NavLink
-              to="a-propos"
-              className={getLinkClasses('/a-propos')}
-              onClick={() => handleClick('/a-propos')}
-            >
-              A Propos
-            </NavLink>
-            <NavLink
-              to="service"
-              className={getLinkClasses('/service')}
-              onClick={() => handleClick('/service')}
-            >
-              Service
-            </NavLink>
-            <NavLink
-              to="secteur"
-              className={getLinkClasses('/secteur')}
-              onClick={() => handleClick('/secteur')}
-            >
-              Secteur
-            </NavLink>
-            <NavLink
-              to="contact"
-              className={getLinkClasses('/contact')}
-              onClick={() => handleClick('/contact')}
-            >
-              Contact
-            </NavLink>
+            {links.map(({ to, label }) => (
+              <NavLink key={to} to={to} className={linkClasses}>
+                {label}
+              </NavLink>
+            ))}
           </div>
         </div>
       </header>
-      
+
       <main className="mt-16 pt-5 flex-grow">
         <Outlet />
       </main>
-      <Footer /> 
+      <Footer />
     </>
   );
 }

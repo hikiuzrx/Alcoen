@@ -33,7 +33,14 @@ The site is a client-side routed SPA, so the server must fall back to `index.htm
 `public/.htaccess` does this and is copied into `dist/` by the build. Upload the whole content of `dist/`
 (including the hidden `.htaccess`) to the web root.
 
+## Status and known limitations
+
+- **Mailing service not ready yet.** Until `VITE_MAIL_API_URL` is set, the contact form does not send anything and shows the company phone numbers instead.
+- `npm audit` still reports issues that need major upgrades (`react-router` v7, ESLint 9 / Tailwind tooling).
+- Some service images exist in both `public/services` and `src/assets`.
+
 ## Notes
 
 - Images should be exported as WebP and sized for their display width.
-- The contact form depends on an external mail service. On free hosting tiers it can sleep, which makes the first request slow.
+- Once the mailing service exists, host it somewhere always-on: free tiers sleep, which makes the first request slow.
+- CI (`.github/workflows/ci.yml`) runs lint and build on every push and pull request.
